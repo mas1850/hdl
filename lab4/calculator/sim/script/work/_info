@@ -29,6 +29,55 @@ R3
 n@_opt1
 R4
 R0
+T_opt10
+!s110 1697484821
+VhLLC<MIHJ208K5PBem6Y90
+R1
+=1-b07b251b0651-652d9015-327-4d4c
+R2
+R3
+n@_opt10
+R4
+R0
+T_opt11
+!s110 1697485092
+VF]Z5R;azh_n_:iNdzf`R80
+R1
+=1-b07b251b0651-652d9124-136-4a90
+R2
+R3
+n@_opt11
+R4
+R0
+T_opt12
+!s110 1697485192
+V>8D`YkJIhLT4m4P7@8PdT1
+R1
+=1-b07b251b0651-652d9188-2ec-306c
+R2
+R3
+n@_opt12
+R4
+R0
+T_opt13
+!s110 1697485911
+VHE7lB<64:E14lb0;EzNoB0
+R1
+=1-b07b251b0651-652d9457-71-3eb8
+R2
+R3
+n@_opt13
+R4
+R0
+T_opt14
+Z5 !s110 1697486178
+V4RFVZiW:_95M];>MUm1Wd2
+R1
+=1-b07b251b0651-652d9562-111-89c
+R2
+R3
+n@_opt14
+R4
 T_opt2
 !s110 1696711227
 VIV4jUl9l7Y]<WR5Vg7dbW1
@@ -70,7 +119,7 @@ n@_opt5
 R4
 R0
 T_opt6
-Z5 !s110 1697059616
+!s110 1697059616
 VY3fR9NZ3hTc]9KS0VmHkP1
 R1
 =1-b07b251b0651-65271320-339-29a4
@@ -78,150 +127,298 @@ R2
 R3
 n@_opt6
 R4
+R0
+T_opt7
+!s110 1697479541
+V<Rm2^8k8SUMlKeo0KGl1l1
+R1
+=1-b07b251b0651-652d7b75-5d-4e9c
+R2
+R3
+n@_opt7
+R4
+R0
+T_opt8
+!s110 1697481873
+Vo[cSQFAnSbOTB`HllC0YT2
+R1
+=1-b07b251b0651-652d8491-182-24a8
+R2
+R3
+n@_opt8
+R4
+R0
+T_opt9
+!s110 1697483525
+V5Vo>nzGndjoGc=TUG7`QR1
+R1
+=1-b07b251b0651-652d8b05-260-1bac
+R2
+R3
+n@_opt9
+R4
+R0
 Ecalculator
-Z6 w1696716231
+Z6 w1697485680
 Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-R0
-Z10 8../../src/calculator.vhd
-Z11 F../../src/calculator.vhd
+Z10 dC:/Users/mas1850/hdl/lab4/calculator/sim/script
+Z11 8../../src/calculator.vhd
+Z12 F../../src/calculator.vhd
 l0
 L10
 V;;W42[lJGcSdkcgmhoCl<3
 !s100 DdL58jcO3=XOl1AkioS<40
-Z12 OL;C;2019.2;69
+Z13 OL;C;2019.2;69
 31
-R5
+Z14 !s110 1697486177
 !i10b 1
-Z13 !s108 1697059616.000000
-Z14 !s90 -reportprogress|300|-93|-work|work|../../src/calculator.vhd|
-Z15 !s107 ../../src/calculator.vhd|
+Z15 !s108 1697486177.000000
+Z16 !s90 -reportprogress|300|-93|-work|work|../../src/calculator.vhd|
+Z17 !s107 ../../src/calculator.vhd|
 !i113 0
-Z16 o-93 -work work
-Z17 tExplicit 1 CvgOpt 0
+Z18 o-93 -work work
+Z19 tExplicit 1 CvgOpt 0
 Abeh
 R7
 R8
 R9
 DEx4 work 10 calculator 0 22 ;;W42[lJGcSdkcgmhoCl<3
-l47
+l60
 L24
-Vlg:NTRl99Z7j^n[M366]51
-!s100 3MO8z4bA:e62WWF^G1;[82
-R12
-31
-R5
-!i10b 1
+V=IJNOdCEfKniS[:UV1<Vc2
+!s100 RnARFkBcfe:MRL5o8GCGX1
 R13
+31
 R14
+!i10b 1
 R15
-!i113 0
 R16
 R17
+!i113 0
+R18
+R19
 Ecalculator_tb
-Z18 w1696716045
-Z19 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z20 w1697485899
+Z21 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R7
 R8
 R9
-R0
-Z20 8../src/calculator_tb.vhd
-Z21 F../src/calculator_tb.vhd
+R10
+Z22 8../src/calculator_tb.vhd
+Z23 F../src/calculator_tb.vhd
 l0
 L10
 VgOd00:jOe4bC6OF8b]m0Q1
 !s100 ?n<ihTRGoN`mMajD[ZSl@0
-R12
-31
-R5
-!i10b 1
 R13
-Z22 !s90 -reportprogress|300|-93|-work|work|../src/calculator_tb.vhd|
-Z23 !s107 ../src/calculator_tb.vhd|
+31
+R14
+!i10b 1
+R15
+Z24 !s90 -reportprogress|300|-93|-work|work|../src/calculator_tb.vhd|
+Z25 !s107 ../src/calculator_tb.vhd|
 !i113 0
-R16
-R17
-Aarch
+R18
 R19
+Aarch
+R21
 R7
 R8
 R9
 DEx4 work 13 calculator_tb 0 22 gOd00:jOe4bC6OF8b]m0Q1
 l41
 L13
-VTRK]@]9JElW8=UQaIS``R1
-!s100 4PSYNWV9EA1`Z5cf4V4ml1
-R12
-31
-R5
-!i10b 1
+V>Z<HDKbzm;ZZ<lTjZ87F<3
+!s100 fRXT7Di6GMYo@<@W5OAMX2
 R13
-R22
-R23
+31
+R14
+!i10b 1
+R15
+R24
+R25
 !i113 0
-R16
-R17
-Eseven_seg
-Z24 w1696453300
+R18
+R19
+Egeneric_counter
+Z26 w1696453300
 R8
 R9
-R0
-Z25 8../../src/seven_seg/src/seven_seg.vhd
-Z26 F../../src/seven_seg/src/seven_seg.vhd
+R10
+Z27 8../../src/generic_counter.vhd
+Z28 F../../src/generic_counter.vhd
+l0
+L8
+V3lBn0j^`oHW6kZhD5dE?W3
+!s100 jTg0DN0^<9=cUz=iZg2oi0
+R13
+31
+R14
+!i10b 1
+R15
+Z29 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
+Z30 !s107 ../../src/generic_counter.vhd|
+!i113 0
+R18
+R19
+Abeh
+R8
+R9
+DEx4 work 15 generic_counter 0 22 3lBn0j^`oHW6kZhD5dE?W3
+l23
+L19
+VTT:M88V=lJ62fz0cSYdIR0
+!s100 z5ik>DVc6W0?c7LPT5hG52
+R13
+31
+R14
+!i10b 1
+R15
+R29
+R30
+!i113 0
+R18
+R19
+Erising_edge_synchronizer
+R26
+R8
+R9
+R10
+Z31 8../../src/rising_edge_synchronizer.vhd
+Z32 F../../src/rising_edge_synchronizer.vhd
+l0
+L8
+V7^gf[0AcMz;oFDKIj=b3N3
+!s100 8>=9Tc6dAVdENebjXiG<30
+R13
+31
+R14
+!i10b 1
+R15
+Z33 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z34 !s107 ../../src/rising_edge_synchronizer.vhd|
+!i113 0
+R18
+R19
+Abeh
+R8
+R9
+DEx4 work 24 rising_edge_synchronizer 0 22 7^gf[0AcMz;oFDKIj=b3N3
+l23
+L17
+V3[Zc:cd7cKK`Uk6V^JOA[0
+!s100 @e1I9@Enc4[;L5b`c?VdR2
+R13
+31
+R14
+!i10b 1
+R15
+R33
+R34
+!i113 0
+R18
+R19
+Eseven_seg
+Z35 w1697484044
+R8
+R9
+R10
+Z36 8../../src/seven_seg.vhd
+Z37 F../../src/seven_seg.vhd
 l0
 L9
 VI^VTAEKbg_TeYnOFW9^Hh3
 !s100 B22Gi4<IjbGkc=eP6meAk3
-R12
-31
-R5
-!i10b 1
 R13
-Z27 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg/src/seven_seg.vhd|
-Z28 !s107 ../../src/seven_seg/src/seven_seg.vhd|
+31
+R14
+!i10b 1
+R15
+Z38 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
+Z39 !s107 ../../src/seven_seg.vhd|
 !i113 0
-R16
-R17
+R18
+R19
 Abeh
 R8
 R9
 DEx4 work 9 seven_seg 0 22 I^VTAEKbg_TeYnOFW9^Hh3
 l17
 L16
-VHSogD=@T]3dfAAHlfi0IQ3
-!s100 4aM77haA^>RWL:<:8`DGo1
-R12
+V`4JPhXLVLlj`DjX[1G:dS1
+!s100 lClCRTaXAPnSnQ`Z<T54A1
+R13
+31
+R14
+!i10b 1
+R15
+R38
+R39
+!i113 0
+R18
+R19
+Esynchronizer_3bit
+Z40 w1697482392
+R8
+R9
+R10
+Z41 8../../src/synchronizer_3bit.vhd
+Z42 F../../src/synchronizer_3bit.vhd
+l0
+L8
+Vl2k=[7`6HZmaF9S8XYHzJ1
+!s100 moKUPo=`8oP24i;=^`T`[1
+R13
 31
 R5
 !i10b 1
-R13
-R27
-R28
+R15
+Z43 !s90 -reportprogress|300|-93|-work|work|../../src/synchronizer_3bit.vhd|
+Z44 !s107 ../../src/synchronizer_3bit.vhd|
 !i113 0
-R16
-R17
+R18
+R19
+Abeh
+R8
+R9
+DEx4 work 17 synchronizer_3bit 0 22 l2k=[7`6HZmaF9S8XYHzJ1
+l22
+L17
+VGkf88<]b20bJ0P@^2I;oX0
+!s100 iSBYb@E2I;@j0F;dY18YT3
+R13
+31
+R5
+!i10b 1
+R15
+R43
+R44
+!i113 0
+R18
+R19
 Etop
-Z29 w1696706910
+Z45 w1696706910
 R8
 R9
 R0
-R10
 R11
+R12
 l0
 L9
 V4g0W=GO`=Gh^3ngJW:;]]2
 !s100 E5jdFD5acbnP6_E5azHA_1
-R12
+R13
 31
-Z30 !s110 1696710244
+Z46 !s110 1696710244
 !i10b 1
-Z31 !s108 1696710244.000000
-R14
-R15
-!i113 0
+Z47 !s108 1696710244.000000
 R16
 R17
+!i113 0
+R18
+R19
 Abeh
 R8
 R9
@@ -230,13 +427,13 @@ l46
 L23
 V0<;B0chQWK:=`eWZCIgEL0
 !s100 b[<g@KX0VOIg1PY^J9Db92
-R12
+R13
 31
-R30
+R46
 !i10b 1
-R31
-R14
-R15
-!i113 0
+R47
 R16
 R17
+!i113 0
+R18
+R19

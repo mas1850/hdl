@@ -34,8 +34,8 @@ signal clk          : std_logic := '0';
 signal reset        : std_logic := '1';
 signal a            : std_logic_vector(2 downto 0) := "111";
 signal b            : std_logic_vector(2 downto 0) := "111";
-signal add_btn      : std_logic;
-signal sub_btn      : std_logic;
+signal add_btn      : std_logic := '0';
+signal sub_btn      : std_logic := '0';
 signal flag         : std_logic;
 
 begin

@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:26:56 on Oct 11,2023
+# Start time: 15:56:17 on Oct 16,2023
 # vcom -reportprogress 300 -93 -work work ../../src/calculator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,10 +22,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator
 # -- Compiling architecture beh of calculator
-# End time: 17:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 15:56:17 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:26:56 on Oct 11,2023
+# Start time: 15:56:17 on Oct 16,2023
 # vcom -reportprogress 300 -93 -work work ../src/calculator_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -35,20 +35,50 @@
 # -- Compiling entity calculator_tb
 # -- Compiling architecture arch of calculator_tb
 # ** Warning: ../src/calculator_tb.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 17:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 15:56:17 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:26:56 on Oct 11,2023
-# vcom -reportprogress 300 -93 -work work ../../src/seven_seg/src/seven_seg.vhd 
+# Start time: 15:56:17 on Oct 16,2023
+# vcom -reportprogress 300 -93 -work work ../../src/generic_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity generic_counter
+# -- Compiling architecture beh of generic_counter
+# End time: 15:56:17 on Oct 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:56:17 on Oct 16,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:56:17 on Oct 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:56:17 on Oct 16,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 17:26:56 on Oct 11,2023, Elapsed time: 0:00:00
+# End time: 15:56:17 on Oct 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:56:17 on Oct 16,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_3bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_3bit
+# -- Compiling architecture beh of synchronizer_3bit
+# End time: 15:56:18 on Oct 16,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" calculator_tb 
-# Start time: 17:26:56 on Oct 11,2023
+# Start time: 15:56:18 on Oct 16,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -57,6 +87,8 @@
 # Loading ieee.math_real(body)
 # Loading work.calculator_tb(arch)#1
 # Loading work.calculator(beh)#1
+# Loading work.synchronizer_3bit(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
 # Loading work.seven_seg(beh)#1
 # GetModuleFileName: The specified module could not be found.
 # 
@@ -66,16 +98,12 @@
 # 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: mas1850  Hostname: GOL-1360-05  ProcessID: 3940
-#           Attempting to use alternate WLF file "./wlft31tjqr".
+#           Attempting to use alternate WLF file "./wlftarwte8".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft31tjqr
+#           Using alternate file: ./wlftarwte8
 # ** Note: ********** sequential testbench start **********
 #    Time: 0 ns  Iteration: 0  Instance: /calculator_tb
-run
 # ** Note: ********** add test complete techbench stop **********
 #    Time: 1380 ns  Iteration: 0  Instance: /calculator_tb
-run
-run
 # ** Note: ********** sub test complete techbench stop **********
 #    Time: 2660 ns  Iteration: 0  Instance: /calculator_tb
-run

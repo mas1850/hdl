@@ -1,0 +1,121 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mas1850/Downloads/full_adder_single_bit_beh/full_adder_single_bit_beh/sim/script
+T_opt
+!s110 1694886315
+V[eQF0zL<nU@4]Rj8<gWe[3
+Z1 04 28 4 work full_adder_single_bit_beh_tb arch 1
+=1-b07b251b0651-6505e9ab-ab-3e1c
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2019.2;69
+R0
+T_opt1
+!s110 1694461422
+V;bM7c73CP51H[o;NEf6[T2
+R1
+=1-b07b251b0651-64ff6dee-193-247c
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1694886198
+VTLlGe=jkh^z[9BlUG45AE0
+R1
+=1-b07b251b0651-6505e935-3e0-3774
+R2
+R3
+n@_opt2
+R4
+R0
+Efull_adder_single_bit_beh
+Z5 w1694885985
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 dC:/Users/mas1850/cpet343/labs/lab1/adder_single_bit_structural/sim/script
+Z10 8../../src/full_adder_single_bit_beh.vhd
+Z11 F../../src/full_adder_single_bit_beh.vhd
+l0
+L11
+V11L0ALOJA_?UkXTClM`>82
+!s100 e_>=6M77F`^MbZRQ?cjeM1
+Z12 OL;C;2019.2;69
+31
+Z13 !s110 1694887781
+!i10b 1
+Z14 !s108 1694887781.000000
+Z15 !s90 -reportprogress|300|-93|-work|work|../../src/full_adder_single_bit_beh.vhd|
+Z16 !s107 ../../src/full_adder_single_bit_beh.vhd|
+!i113 0
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Abeh
+R6
+R7
+R8
+DEx4 work 25 full_adder_single_bit_beh 0 22 11L0ALOJA_?UkXTClM`>82
+l27
+L21
+Vi8jkB1DYBcm_]jEL5m@DJ3
+!s100 Nk`I4LfWhGXkREZf`47TK3
+R12
+31
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Efull_adder_single_bit_beh_tb
+Z19 w1694458907
+R7
+R8
+R9
+Z20 8../src/full_adder_single_bit_beh_tb.vhd
+Z21 F../src/full_adder_single_bit_beh_tb.vhd
+l0
+L8
+VR39eAB0`GfW:9BRV2[LTL2
+!s100 Q[@[NL[Bg@NUI4ZQ^zW@H2
+R12
+31
+R13
+!i10b 1
+R14
+Z22 !s90 -reportprogress|300|-93|-work|work|../src/full_adder_single_bit_beh_tb.vhd|
+Z23 !s107 ../src/full_adder_single_bit_beh_tb.vhd|
+!i113 0
+R17
+R18
+Aarch
+R7
+R8
+Z24 DEx4 work 28 full_adder_single_bit_beh_tb 0 22 R39eAB0`GfW:9BRV2[LTL2
+l29
+L11
+Z25 VU:Bd@7K[UfD^816e8e[B02
+Z26 !s100 AWVb]NK;V6==F9K?eUcLZ0
+R12
+31
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18

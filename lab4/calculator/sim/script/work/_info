@@ -70,13 +70,23 @@ n@_opt13
 R4
 R0
 T_opt14
-Z5 !s110 1697486178
+!s110 1697486178
 V4RFVZiW:_95M];>MUm1Wd2
 R1
 =1-b07b251b0651-652d9562-111-89c
 R2
 R3
 n@_opt14
+R4
+R0
+T_opt15
+Z5 !s110 1697662210
+VS0Mg7i?_G4lIIljCZ6f7Y3
+R1
+=1-b07b251b06e3-65304502-1fe-42b8
+R2
+R3
+n@_opt15
 R4
 T_opt2
 !s110 1696711227
@@ -159,11 +169,11 @@ n@_opt9
 R4
 R0
 Ecalculator
-Z6 w1697485680
+Z6 w1697662194
 Z7 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-Z10 dC:/Users/mas1850/hdl/lab4/calculator/sim/script
+Z10 dC:/Users/mas1850/hdl/hdl/lab4/calculator/sim/script
 Z11 8../../src/calculator.vhd
 Z12 F../../src/calculator.vhd
 l0
@@ -172,9 +182,9 @@ V;;W42[lJGcSdkcgmhoCl<3
 !s100 DdL58jcO3=XOl1AkioS<40
 Z13 OL;C;2019.2;69
 31
-Z14 !s110 1697486177
+Z14 !s110 1697662209
 !i10b 1
-Z15 !s108 1697486177.000000
+Z15 !s108 1697662209.000000
 Z16 !s90 -reportprogress|300|-93|-work|work|../../src/calculator.vhd|
 Z17 !s107 ../../src/calculator.vhd|
 !i113 0
@@ -187,8 +197,8 @@ R9
 DEx4 work 10 calculator 0 22 ;;W42[lJGcSdkcgmhoCl<3
 l60
 L24
-V=IJNOdCEfKniS[:UV1<Vc2
-!s100 RnARFkBcfe:MRL5o8GCGX1
+V;e=zFT;oPc0B]FoQgfI5F2
+!s100 3ERi1S4?Z2b9<Y:Xazm6T3
 R13
 31
 R14
@@ -200,7 +210,7 @@ R17
 R18
 R19
 Ecalculator_tb
-Z20 w1697485899
+Z20 w1697660451
 Z21 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R7
 R8
@@ -243,12 +253,12 @@ R25
 R18
 R19
 Egeneric_counter
-Z26 w1696453300
+R20
 R8
 R9
 R10
-Z27 8../../src/generic_counter.vhd
-Z28 F../../src/generic_counter.vhd
+Z26 8../../src/generic_counter.vhd
+Z27 F../../src/generic_counter.vhd
 l0
 L8
 V3lBn0j^`oHW6kZhD5dE?W3
@@ -258,8 +268,8 @@ R13
 R14
 !i10b 1
 R15
-Z29 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
-Z30 !s107 ../../src/generic_counter.vhd|
+Z28 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
+Z29 !s107 ../../src/generic_counter.vhd|
 !i113 0
 R18
 R19
@@ -276,29 +286,29 @@ R13
 R14
 !i10b 1
 R15
+R28
 R29
-R30
 !i113 0
 R18
 R19
 Erising_edge_synchronizer
-R26
+R20
 R8
 R9
 R10
-Z31 8../../src/rising_edge_synchronizer.vhd
-Z32 F../../src/rising_edge_synchronizer.vhd
+Z30 8../../src/rising_edge_synchronizer.vhd
+Z31 F../../src/rising_edge_synchronizer.vhd
 l0
 L8
 V7^gf[0AcMz;oFDKIj=b3N3
 !s100 8>=9Tc6dAVdENebjXiG<30
 R13
 31
-R14
+R5
 !i10b 1
 R15
-Z33 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
-Z34 !s107 ../../src/rising_edge_synchronizer.vhd|
+Z32 !s90 -reportprogress|300|-93|-work|work|../../src/rising_edge_synchronizer.vhd|
+Z33 !s107 ../../src/rising_edge_synchronizer.vhd|
 !i113 0
 R18
 R19
@@ -312,32 +322,32 @@ V3[Zc:cd7cKK`Uk6V^JOA[0
 !s100 @e1I9@Enc4[;L5b`c?VdR2
 R13
 31
-R14
+R5
 !i10b 1
 R15
+R32
 R33
-R34
 !i113 0
 R18
 R19
 Eseven_seg
-Z35 w1697484044
+R20
 R8
 R9
 R10
-Z36 8../../src/seven_seg.vhd
-Z37 F../../src/seven_seg.vhd
+Z34 8../../src/seven_seg.vhd
+Z35 F../../src/seven_seg.vhd
 l0
 L9
 VI^VTAEKbg_TeYnOFW9^Hh3
 !s100 B22Gi4<IjbGkc=eP6meAk3
 R13
 31
-R14
+R5
 !i10b 1
-R15
-Z38 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
-Z39 !s107 ../../src/seven_seg.vhd|
+Z36 !s108 1697662210.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
+Z38 !s107 ../../src/seven_seg.vhd|
 !i113 0
 R18
 R19
@@ -351,21 +361,21 @@ V`4JPhXLVLlj`DjX[1G:dS1
 !s100 lClCRTaXAPnSnQ`Z<T54A1
 R13
 31
-R14
+R5
 !i10b 1
-R15
+R36
+R37
 R38
-R39
 !i113 0
 R18
 R19
 Esynchronizer_3bit
-Z40 w1697482392
+R20
 R8
 R9
 R10
-Z41 8../../src/synchronizer_3bit.vhd
-Z42 F../../src/synchronizer_3bit.vhd
+Z39 8../../src/synchronizer_3bit.vhd
+Z40 F../../src/synchronizer_3bit.vhd
 l0
 L8
 Vl2k=[7`6HZmaF9S8XYHzJ1
@@ -374,9 +384,9 @@ R13
 31
 R5
 !i10b 1
-R15
-Z43 !s90 -reportprogress|300|-93|-work|work|../../src/synchronizer_3bit.vhd|
-Z44 !s107 ../../src/synchronizer_3bit.vhd|
+R36
+Z41 !s90 -reportprogress|300|-93|-work|work|../../src/synchronizer_3bit.vhd|
+Z42 !s107 ../../src/synchronizer_3bit.vhd|
 !i113 0
 R18
 R19
@@ -392,14 +402,14 @@ R13
 31
 R5
 !i10b 1
-R15
-R43
-R44
+R36
+R41
+R42
 !i113 0
 R18
 R19
 Etop
-Z45 w1696706910
+Z43 w1696706910
 R8
 R9
 R0
@@ -411,9 +421,9 @@ V4g0W=GO`=Gh^3ngJW:;]]2
 !s100 E5jdFD5acbnP6_E5azHA_1
 R13
 31
-Z46 !s110 1696710244
+Z44 !s110 1696710244
 !i10b 1
-Z47 !s108 1696710244.000000
+Z45 !s108 1696710244.000000
 R16
 R17
 !i113 0
@@ -429,9 +439,9 @@ V0<;B0chQWK:=`eWZCIgEL0
 !s100 b[<g@KX0VOIg1PY^J9Db92
 R13
 31
-R46
+R44
 !i10b 1
-R47
+R45
 R16
 R17
 !i113 0

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
 -- top level for lab 4 calculator
--- last modified 10/7/23
+-- last modified 10/18/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -54,8 +54,8 @@ signal a_padded     : std_logic_vector(3 downto 0);
 signal b_padded     : std_logic_vector(3 downto 0);
 signal add_synced   : std_logic := '0';
 signal sub_synced   : std_logic := '0';
-signal flag         : std_logic;
-signal res          : std_logic_vector(3 downto 0);
+signal flag         : std_logic := '0';
+signal res          : std_logic_vector(3 downto 0) := "0000";
 
 begin
 
@@ -94,14 +94,14 @@ begin
 
 
   --pad and display inputs
-  pad: process(a_in, b_in, reset)
+  pad: process(a_synced, b_synced, reset)
   begin
     if (reset = '1') then
       a_padded <= "0000";
       b_padded <= "0000";
     else
-      a_padded <= '0' & a_in;
-      b_padded <= '0' & b_in;
+      a_padded <= '0' & a_synced;
+      b_padded <= '0' & b_synced;
     end if;
   end process;
 
@@ -116,19 +116,6 @@ begin
     bcd             => b_padded,
     seven_seg_out   => b_out
   );
-
-  a_lcd: seven_seg
-  port map (
-    bcd             => a_padded,
-    seven_seg_out   => a_out
-  );
-
-  b_lcd: seven_seg
-  port map (
-    bcd             => b_padded,
-    seven_seg_out   => b_out
-  );
-
 
   --determine if add or sub, display result
   op_flag: process(clk)

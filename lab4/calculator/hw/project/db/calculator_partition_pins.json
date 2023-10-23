@@ -1,0 +1,133 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "a_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "a_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "b_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "res_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "a_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "a_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "a_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "add_btn",
+					"strict" : false
+				},
+				{
+					"name" : "sub_btn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

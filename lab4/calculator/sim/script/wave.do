@@ -22,20 +22,20 @@ radix define States {
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /calculator_tb/uut/clk
 add wave -noupdate /calculator_tb/uut/reset
+add wave -noupdate /calculator_tb/uut/a_in
+add wave -noupdate /calculator_tb/uut/a_synced
+add wave -noupdate /calculator_tb/uut/a_padded
+add wave -noupdate /calculator_tb/uut/b_in
+add wave -noupdate /calculator_tb/uut/b_synced
+add wave -noupdate /calculator_tb/uut/b_padded
+add wave -noupdate /calculator_tb/uut/res
 add wave -noupdate /calculator_tb/add_btn
 add wave -noupdate /calculator_tb/uut/add_synced
 add wave -noupdate /calculator_tb/sub_btn
 add wave -noupdate /calculator_tb/uut/sub_synced
 add wave -noupdate /calculator_tb/uut/flag
-add wave -noupdate /calculator_tb/uut/a_in
-add wave -noupdate /calculator_tb/uut/a_padded
 add wave -noupdate -radix States /calculator_tb/uut/a_out
-add wave -noupdate /calculator_tb/uut/a_synced
-add wave -noupdate /calculator_tb/uut/b_in
-add wave -noupdate /calculator_tb/uut/b_synced
-add wave -noupdate /calculator_tb/uut/b_padded
 add wave -noupdate -radix States /calculator_tb/uut/b_out
-add wave -noupdate -expand /calculator_tb/uut/res
 add wave -noupdate -radix States /calculator_tb/uut/res_out
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {9 ns} 0}
@@ -54,4 +54,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {2601 ns} {2706 ns}
+WaveRestoreZoom {0 ns} {731 ns}

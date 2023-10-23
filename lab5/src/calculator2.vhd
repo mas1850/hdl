@@ -7,7 +7,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity calculator is
+entity calculator2 is
   port (
     in_switches       : in  std_logic_vector(7 downto 0);
     btn               : in  std_logic;
@@ -18,9 +18,9 @@ entity calculator is
     ssd_tens          : out std_logic_vector(6 downto 0);
     ssd_ones          : out std_logic_vector(6 downto 0)
   );
-end calculator;
+end calculator2;
 
-architecture beh of calculator is
+architecture beh of calculator2 is
 
   component synchronizer_8bit is 
     port (
@@ -61,13 +61,13 @@ architecture beh of calculator is
   signal in_b         : std_logic_vector(7 downto 0);
   signal btn_sync     : std_logic;
 
-  signal res          : std_logic_vector(8 downto 0);
-  signal res_padded   : std_logic_vector(11 downto 0);
-  signal bin_hund     : out std_logic_vector(3 downto 0);
-  signal bin_tens     : out std_logic_vector(3 downto 0);
-  signal bin_ones     : out std_logic_vector(3 downto 0)
+  signal res          : std_logic_vector(8 downto 0) := "000000000";
+  signal res_padded   : std_logic_vector(11 downto 0) := "000000000000";
+  signal bin_hund     : std_logic_vector(3 downto 0);
+  signal bin_tens     : std_logic_vector(3 downto 0);
+  signal bin_ones     : std_logic_vector(3 downto 0);
 
-  type calc_state    is (IN_A, IN_B, ADD, SUB);
+  type calc_state    is (INPUT_A, INPUT_B, SUM, DIFF);
   signal pres_state   : calc_state;
   signal next_state   : calc_state;
 
@@ -94,7 +94,7 @@ begin
   state_reg: process (clk, reset)
   begin
     if (reset = '1') then
-      pres_state <= IN_A;
+      pres_state <= INPUT_A;
     elsif(rising_edge(clk)) then
       pres_state <= next_state;
     end if;
@@ -103,25 +103,25 @@ begin
   next_state_logic: process(pres_state)
   begin
     case pres_state is
-      when IN_A =>
+      when INPUT_A =>
         if (btn_sync = '1') then
-          next_state <= IN_B;
+          next_state <= INPUT_B;
         end if;
 
-      when IN_B =>
-      if (btn_sync = '1') then
-        next_state <= ADD;
-      end if;
+      when INPUT_B =>
+        if (btn_sync = '1') then
+          next_state <= SUM;
+        end if;
 
-      when ADD =>
-      if (btn_sync = '1') then
-        next_state <= SUB;
-      end if;      
+      when SUM =>
+        if (btn_sync = '1') then
+          next_state <= DIFF;
+        end if;      
 
-      when SUB =>
-      if (btn_sync = '1') then
-        next_state <= IN_A;
-      end if;
+      when DIFF =>
+        if (btn_sync = '1') then
+          next_state <= INPUT_A;
+        end if;
     end case;
   end process; -- end next state logic
 
@@ -131,9 +131,9 @@ begin
     if (reset = '1') then
       in_a <= "00000000";
       in_b <= "00000000";
-    elsif (pres_state = IN_A) then
+    elsif (pres_state = INPUT_A) then
       in_a <= in_sync;
-    elsif (pres_state = IN_B) then
+    elsif (pres_state = INPUT_B) then
       in_b <= in_sync;
     end if;
   end process; -- end input assignment
@@ -141,14 +141,18 @@ begin
   operation: process(pres_state)
   begin
     case pres_state is
-      when IN_A =>
+      when INPUT_A =>
         res <= '0' & in_a;
-      when IN_B =>
-        res <= '0' & in_b
-      when ADD =>
+        state_led <= "1000";
+      when INPUT_B =>
+        res <= '0' & in_b;
+        state_led <= "0100";
+      when SUM =>
         res <= std_logic_vector(unsigned(in_a) + unsigned(in_b));
-      when SUB =>
+        state_led <= "0010";
+      when DIFF =>
         res <= std_logic_vector(unsigned(in_a) - unsigned(in_b));
+        state_led <= "0001";
     end case;
   end process; -- end operations
 
@@ -166,19 +170,19 @@ begin
     hundreds        => bin_hund
   );
 
-  ssd_hund: seven_seg
+  display_hundreds: seven_seg
   port map(
     bcd             => bin_hund,
     seven_seg_out   => ssd_hund
   );
 
-  ssd_tens: seven_seg
+  display_tens: seven_seg
   port map(
     bcd             => bin_tens,
     seven_seg_out   => ssd_tens
   );
 
-  ssd_ones: seven_seg
+  display_ones: seven_seg
   port map(
     bcd             => bin_ones,
     seven_seg_out   => ssd_ones

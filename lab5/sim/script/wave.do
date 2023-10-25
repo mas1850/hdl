@@ -22,16 +22,16 @@ radix define States {
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /calculator2_tb/clk
 add wave -noupdate /calculator2_tb/reset
-add wave -noupdate /calculator2_tb/in_switches
-add wave -noupdate /calculator2_tb/uut/in_sync
-add wave -noupdate /calculator2_tb/uut/in_a
-add wave -noupdate /calculator2_tb/uut/in_b
+add wave -noupdate -radix unsigned /calculator2_tb/in_switches
+add wave -noupdate -radix unsigned /calculator2_tb/uut/in_sync
+add wave -noupdate -radix unsigned /calculator2_tb/uut/in_a
+add wave -noupdate -radix unsigned /calculator2_tb/uut/in_b
 add wave -noupdate /calculator2_tb/btn
 add wave -noupdate /calculator2_tb/uut/btn_sync
 add wave -noupdate /calculator2_tb/uut/pres_state
 add wave -noupdate /calculator2_tb/uut/next_state
-add wave -noupdate /calculator2_tb/uut/res
-add wave -noupdate /calculator2_tb/uut/res_padded
+add wave -noupdate -radix unsigned /calculator2_tb/uut/res
+add wave -noupdate -radix unsigned /calculator2_tb/uut/res_padded
 add wave -noupdate /calculator2_tb/uut/bin_hund
 add wave -noupdate /calculator2_tb/uut/bin_tens
 add wave -noupdate /calculator2_tb/uut/bin_ones
@@ -39,7 +39,7 @@ add wave -noupdate -radix States /calculator2_tb/uut/ssd_hund
 add wave -noupdate -radix States /calculator2_tb/uut/ssd_tens
 add wave -noupdate -radix States /calculator2_tb/uut/ssd_ones
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {9 ns} 0}
+WaveRestoreCursors {{Cursor 1} {478 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 177
 configure wave -valuecolwidth 40
@@ -55,4 +55,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {731 ns}
+WaveRestoreZoom {0 ns} {1957 ns}

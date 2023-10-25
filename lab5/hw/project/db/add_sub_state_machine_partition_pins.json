@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "state_led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "state_led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_hund[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_tens[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ssd_ones[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in_switches[0]",
+					"strict" : false
+				},
+				{
+					"name" : "btn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

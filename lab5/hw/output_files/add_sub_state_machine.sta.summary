@@ -1,0 +1,197 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'pres_state.INPUT_B'
+Slack : -4.538
+TNS   : -34.663
+
+Type  : Slow 1100mV 85C Model Setup 'rising_edge_synchronizer:sync_button|edge'
+Slack : -4.048
+TNS   : -11.621
+
+Type  : Slow 1100mV 85C Model Setup 'pres_state.INPUT_A'
+Slack : -3.932
+TNS   : -30.011
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.464
+TNS   : -40.309
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.742
+TNS   : -5.331
+
+Type  : Slow 1100mV 85C Model Hold 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.930
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pres_state.INPUT_A'
+Slack : 2.587
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pres_state.INPUT_B'
+Slack : 3.363
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -19.178
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pres_state.INPUT_A'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pres_state.INPUT_B'
+Slack : 0.395
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'pres_state.INPUT_B'
+Slack : -4.612
+TNS   : -35.439
+
+Type  : Slow 1100mV 0C Model Setup 'rising_edge_synchronizer:sync_button|edge'
+Slack : -4.153
+TNS   : -11.665
+
+Type  : Slow 1100mV 0C Model Setup 'pres_state.INPUT_A'
+Slack : -4.007
+TNS   : -30.645
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -3.323
+TNS   : -37.237
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -2.829
+TNS   : -5.476
+
+Type  : Slow 1100mV 0C Model Hold 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.903
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pres_state.INPUT_A'
+Slack : 2.616
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pres_state.INPUT_B'
+Slack : 3.446
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -20.625
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pres_state.INPUT_A'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pres_state.INPUT_B'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.450
+TNS   : -28.296
+
+Type  : Fast 1100mV 85C Model Setup 'pres_state.INPUT_B'
+Slack : -2.293
+TNS   : -17.089
+
+Type  : Fast 1100mV 85C Model Setup 'rising_edge_synchronizer:sync_button|edge'
+Slack : -1.951
+TNS   : -5.378
+
+Type  : Fast 1100mV 85C Model Setup 'pres_state.INPUT_A'
+Slack : -1.756
+TNS   : -13.034
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -1.334
+TNS   : -2.542
+
+Type  : Fast 1100mV 85C Model Hold 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.714
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pres_state.INPUT_A'
+Slack : 1.439
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pres_state.INPUT_B'
+Slack : 1.951
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.090
+TNS   : -3.266
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pres_state.INPUT_B'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pres_state.INPUT_A'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'pres_state.INPUT_B'
+Slack : -2.209
+TNS   : -16.587
+
+Type  : Fast 1100mV 0C Model Setup 'rising_edge_synchronizer:sync_button|edge'
+Slack : -1.899
+TNS   : -5.031
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.881
+TNS   : -21.766
+
+Type  : Fast 1100mV 0C Model Setup 'pres_state.INPUT_A'
+Slack : -1.672
+TNS   : -12.468
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -1.324
+TNS   : -2.529
+
+Type  : Fast 1100mV 0C Model Hold 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pres_state.INPUT_A'
+Slack : 1.410
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pres_state.INPUT_B'
+Slack : 1.954
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.089
+TNS   : -3.232
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pres_state.INPUT_B'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'rising_edge_synchronizer:sync_button|edge'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pres_state.INPUT_A'
+Slack : 0.431
+TNS   : 0.000
+
+------------------------------------------------------------

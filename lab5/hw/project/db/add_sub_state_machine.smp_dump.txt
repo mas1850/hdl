@@ -1,0 +1,7 @@
+
+State Machine - |calculator2|pres_state
+Name pres_state.DIFF pres_state.SUM pres_state.INPUT_B pres_state.INPUT_A 
+pres_state.INPUT_A 0 0 0 0 
+pres_state.INPUT_B 0 0 1 1 
+pres_state.SUM 0 1 0 1 
+pres_state.DIFF 1 0 0 1 

@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:20 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../../src/calculator2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,12 +22,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator2
 # -- Compiling architecture beh of calculator2
-# ** Warning: ../../src/calculator2.vhd(151): (vcom-1272) Length of expected is 9; length of actual is 8.
-# ** Warning: ../../src/calculator2.vhd(154): (vcom-1272) Length of expected is 9; length of actual is 8.
-# End time: 17:49:20 on Oct 23,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:20 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../src/calculator2_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -37,40 +35,40 @@
 # -- Compiling entity calculator2_tb
 # -- Compiling architecture arch of calculator2_tb
 # ** Warning: ../src/calculator2_tb.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 17:49:20 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:20 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 17:49:20 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:20 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 17:49:20 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:20 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_8bit
 # -- Compiling architecture beh of synchronizer_8bit
-# End time: 17:49:21 on Oct 23,2023, Elapsed time: 0:00:01
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 17:49:21 on Oct 23,2023
+# Start time: 18:19:06 on Oct 25,2023
 # vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -78,11 +76,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 17:49:21 on Oct 23,2023, Elapsed time: 0:00:00
+# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" calculator2_tb 
-# Start time: 17:49:21 on Oct 23,2023
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 18:19:06 on Oct 25,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "calculator2(beh)".
 # Loading std.standard
 # Loading std.textio(body)
@@ -101,125 +99,93 @@
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/clk'.
-# Executing ONERROR command at macro ./wave.do line 23
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/reset'.
-# Executing ONERROR command at macro ./wave.do line 24
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/a_in'.
-# Executing ONERROR command at macro ./wave.do line 25
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/a_synced'.
-# Executing ONERROR command at macro ./wave.do line 26
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/a_padded'.
-# Executing ONERROR command at macro ./wave.do line 27
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/b_in'.
-# Executing ONERROR command at macro ./wave.do line 28
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/b_synced'.
-# Executing ONERROR command at macro ./wave.do line 29
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/b_padded'.
-# Executing ONERROR command at macro ./wave.do line 30
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/res'.
-# Executing ONERROR command at macro ./wave.do line 31
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/add_btn'.
-# Executing ONERROR command at macro ./wave.do line 32
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/add_synced'.
-# Executing ONERROR command at macro ./wave.do line 33
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/sub_btn'.
-# Executing ONERROR command at macro ./wave.do line 34
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/sub_synced'.
-# Executing ONERROR command at macro ./wave.do line 35
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/flag'.
-# Executing ONERROR command at macro ./wave.do line 36
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/a_out'.
-# Executing ONERROR command at macro ./wave.do line 37
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/b_out'.
-# Executing ONERROR command at macro ./wave.do line 38
-# ** Error: (vish-4014) No objects found matching '/calculator_tb/uut/res_out'.
-# Executing ONERROR command at macro ./wave.do line 39
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-05  ProcessID: 17824
+#           Attempting to use alternate WLF file "./wlftiwqr7s".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftiwqr7s
 # ** Note: ********** sequential testbench start **********
 #    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 1  Instance: /calculator2_tb/uut/dd
 # ** Note: ********** 5+2=7  /  5-2=3 **********
 #    Time: 100 ns  Iteration: 0  Instance: /calculator2_tb
 # ** Note: ********** 5+2=7  /  2-5=509 **********
-#    Time: 420 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** 200+100=300  /  200-100=100 **********
 #    Time: 740 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** 100+200=300  /  100-200=412 **********
-#    Time: 1060 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** sequential testbench end **********
+# ** Note: ********** 200+100=300  /  200-100=100 **********
 #    Time: 1380 ns  Iteration: 0  Instance: /calculator2_tb
-add wave -position end  sim:/calculator2_tb/in_switches
-add wave -position end  sim:/calculator2_tb/btn
-add wave -position end  sim:/calculator2_tb/clk
-add wave -position end  sim:/calculator2_tb/reset
-add wave -position 3 sim:/calculator2_tb/uut/sync_input/*
-add wave -position 3  sim:/calculator2_tb/uut/in_sync
-add wave -position 4  sim:/calculator2_tb/uut/in_a
-add wave -position 5  sim:/calculator2_tb/uut/in_b
-add wave -position end  sim:/calculator2_tb/uut/btn_sync
-add wave -position end  sim:/calculator2_tb/uut/res
-add wave -position end  sim:/calculator2_tb/uut/res_padded
-add wave -position end  sim:/calculator2_tb/uut/bin_hund
-add wave -position end  sim:/calculator2_tb/uut/bin_tens
-add wave -position end  sim:/calculator2_tb/uut/bin_ones
-add wave -position end  sim:/calculator2_tb/uut/ssd_hund
-add wave -position end  sim:/calculator2_tb/uut/ssd_tens
-add wave -position end  sim:/calculator2_tb/uut/ssd_ones
-add wave -position 8  sim:/calculator2_tb/uut/pres_state
-add wave -position 9  sim:/calculator2_tb/uut/next_state
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/lab5/sim/script/wave.do
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: ********** 100+200=300  /  100-200=412 **********
+#    Time: 2020 ns  Iteration: 0  Instance: /calculator2_tb
+# ** Note: ********** sequential testbench end **********
+#    Time: 2660 ns  Iteration: 0  Instance: /calculator2_tb
 run
-# ** Note: ********** sequential testbench start **********
-#    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
-#    Time: 0 ns  Iteration: 2  Instance: /calculator2_tb/uut/dd
-# ** Note: ********** 5+2=7  /  5-2=3 **********
-#    Time: 100 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** 5+2=7  /  2-5=509 **********
-#    Time: 420 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** 200+100=300  /  200-100=100 **********
-#    Time: 740 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** 100+200=300  /  100-200=412 **********
-#    Time: 1060 ns  Iteration: 0  Instance: /calculator2_tb
-# ** Note: ********** sequential testbench end **********
-#    Time: 1380 ns  Iteration: 0  Instance: /calculator2_tb
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/hdl/lab5/sim/script/wave.do

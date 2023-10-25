@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
 -- lab5 calculator2 test bench
+-- last modified 10/25/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -25,7 +26,7 @@ architecture arch of calculator2_tb is
     );
   end component;
 
-  signal in_switches       : std_logic_vector(7 downto 0);
+  signal in_switches       : std_logic_vector(7 downto 0) := "00000000";
   signal btn               : std_logic := '0';
   signal clk               : std_logic := '0'; 
   signal reset             : std_logic := '1';
@@ -71,85 +72,85 @@ begin
     report "********** 5+2=7  /  5-2=3 **********";
     btn <= '0';
     in_switches <= "00000101";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input b
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
     in_switches <= "00000010";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter sum
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter diff
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input a
-    wait for 40 ns;
+    wait for 80 ns;
 
     -- A=2, B=5, SUM=7 DIFF=509
     report "********** 5+2=7  /  2-5=509 **********";
     btn <= '0';
     in_switches <= "00000010";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input b
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
     in_switches <= "00000101";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter sum
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter diff
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input a
-    wait for 40 ns;
+    wait for 80 ns;
 
     -- A=200, B=100, SUM=300 DIFF=100
     report "********** 200+100=300  /  200-100=100 **********";
     btn <= '0';
     in_switches <= "11001000";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input b
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
     in_switches <= "01100100";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter sum
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter diff
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input a
-    wait for 40 ns;
+    wait for 80 ns;
 
     report "********** 100+200=300  /  100-200=412 **********";
     -- A=100, B=200, SUM=300 DIFF=412
     btn <= '0';
     in_switches <= "01100100";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input b
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
     in_switches <= "11001000";
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter sum
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter diff
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '0';
-    wait for 40 ns;
+    wait for 80 ns;
     btn <= '1'; -- enter input a
-    wait for 40 ns;
+    wait for 80 ns;
     report "********** sequential testbench end **********";
 
     wait;

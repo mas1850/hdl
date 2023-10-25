@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
 -- top level for lab 5 calculator
--- last modified 10/23/23
+-- last modified 10/25/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -61,8 +61,8 @@ architecture beh of calculator2 is
   signal in_b         : std_logic_vector(7 downto 0);
   signal btn_sync     : std_logic;
 
-  signal res          : std_logic_vector(8 downto 0) := "000000000";
-  signal res_padded   : std_logic_vector(11 downto 0) := "000000000000";
+  signal res          : std_logic_vector(8 downto 0);
+  signal res_padded   : std_logic_vector(11 downto 0);
   signal bin_hund     : std_logic_vector(3 downto 0);
   signal bin_tens     : std_logic_vector(3 downto 0);
   signal bin_ones     : std_logic_vector(3 downto 0);
@@ -100,7 +100,7 @@ begin
     end if;
   end process; -- end state register
 
-  next_state_logic: process(pres_state)
+  next_state_logic: process(pres_state, btn_sync)
   begin
     case pres_state is
       when INPUT_A =>
@@ -126,7 +126,7 @@ begin
   end process; -- end next state logic
 
   -- input assignment and math
-  inputs: process(in_sync)
+  inputs: process(clk)
   begin
     if (reset = '1') then
       in_a <= "00000000";
@@ -138,22 +138,24 @@ begin
     end if;
   end process; -- end input assignment
 
-  operation: process(pres_state)
+  operation: process(clk, pres_state)
   begin
-    case pres_state is
-      when INPUT_A =>
-        res <= '0' & in_a;
-        state_led <= "1000";
-      when INPUT_B =>
-        res <= '0' & in_b;
-        state_led <= "0100";
-      when SUM =>
-        res <= std_logic_vector(unsigned(in_a) + unsigned(in_b));
-        state_led <= "0010";
-      when DIFF =>
-        res <= std_logic_vector(unsigned(in_a) - unsigned(in_b));
-        state_led <= "0001";
-    end case;
+    if(rising_edge(clk)) then
+      case pres_state is
+        when INPUT_A =>
+          res <= '0' & in_a;
+          state_led <= "1000";
+        when INPUT_B =>
+          res <= '0' & in_b;
+          state_led <= "0100";
+        when SUM =>
+          res <= std_logic_vector(unsigned('0' & in_a) + unsigned('0' & in_b));
+          state_led <= "0010";
+        when DIFF =>
+          res <= std_logic_vector(unsigned('0' & in_a) - unsigned('0' & in_b));
+          state_led <= "0001";
+      end case;
+    end if;
   end process; -- end operations
 
   pad: process(res)

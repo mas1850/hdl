@@ -28,6 +28,7 @@ add wave -noupdate -radix unsigned /calculator2_tb/uut/in_a
 add wave -noupdate -radix unsigned /calculator2_tb/uut/in_b
 add wave -noupdate /calculator2_tb/btn
 add wave -noupdate /calculator2_tb/uut/btn_sync
+add wave -noupdate /calculator2_tb/uut/state_led
 add wave -noupdate /calculator2_tb/uut/pres_state
 add wave -noupdate /calculator2_tb/uut/next_state
 add wave -noupdate -radix unsigned /calculator2_tb/uut/res
@@ -55,4 +56,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {1957 ns}
+WaveRestoreZoom {0 ns} {2940 ns}

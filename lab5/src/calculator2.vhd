@@ -126,14 +126,14 @@ begin
   end process; -- end next state logic
 
   -- input assignment and math
-  inputs: process(clk)
+  inputs: process(reset, clk)
   begin
     if (reset = '1') then
       in_a <= "00000000";
       in_b <= "00000000";
-    elsif (pres_state = INPUT_A) then
+    elsif ((pres_state = INPUT_A) and rising_edge(clk)) then
       in_a <= in_sync;
-    elsif (pres_state = INPUT_B) then
+    elsif ((pres_state = INPUT_B) and rising_edge(clk)) then
       in_b <= in_sync;
     end if;
   end process; -- end input assignment
@@ -144,19 +144,39 @@ begin
       case pres_state is
         when INPUT_A =>
           res <= '0' & in_a;
-          state_led <= "1000";
+          --state_led <= "1000";
         when INPUT_B =>
           res <= '0' & in_b;
-          state_led <= "0100";
+          --state_led <= "0100";
         when SUM =>
           res <= std_logic_vector(unsigned('0' & in_a) + unsigned('0' & in_b));
-          state_led <= "0010";
+          --state_led <= "0010";
         when DIFF =>
           res <= std_logic_vector(unsigned('0' & in_a) - unsigned('0' & in_b));
-          state_led <= "0001";
+          --state_led <= "0001";
       end case;
     end if;
   end process; -- end operations
+  
+  state_display: process(clk, pres_state)
+  begin
+    if(rising_edge(clk)) then
+      case pres_state is
+        when INPUT_A =>
+          --res <= '0' & in_a;
+          state_led <= "1000";
+        when INPUT_B =>
+          --res <= '0' & in_b;
+          state_led <= "0100";
+        when SUM =>
+          --res <= std_logic_vector(unsigned('0' & in_a) + unsigned('0' & in_b));
+          state_led <= "0010";
+        when DIFF =>
+          --res <= std_logic_vector(unsigned('0' & in_a) - unsigned('0' & in_b));
+          state_led <= "0001";
+      end case;
+    end if;
+  end process; -- end state_display
 
   pad: process(res)
   begin

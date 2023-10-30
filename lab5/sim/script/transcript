@@ -14,7 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:27 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../../src/calculator2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,10 +22,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator2
 # -- Compiling architecture beh of calculator2
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# End time: 15:50:27 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:27 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../src/calculator2_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -34,41 +34,41 @@
 # -- Loading package MATH_REAL
 # -- Compiling entity calculator2_tb
 # -- Compiling architecture arch of calculator2_tb
-# ** Warning: ../src/calculator2_tb.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# ** Warning: ../src/calculator2_tb.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 15:50:27 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:28 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# End time: 15:50:28 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:28 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# End time: 15:50:28 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:28 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_8bit
 # -- Compiling architecture beh of synchronizer_8bit
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# End time: 15:50:28 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:28 on Oct 30,2023
 # vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -76,10 +76,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 18:19:06 on Oct 25,2023, Elapsed time: 0:00:00
+# End time: 15:50:28 on Oct 30,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" calculator2_tb 
-# Start time: 18:19:06 on Oct 25,2023
+# Start time: 15:50:28 on Oct 30,2023
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "calculator2(beh)".
 # Loading std.standard
@@ -101,9 +101,9 @@
 # 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: mas1850  Hostname: GOL-1360-05  ProcessID: 17824
-#           Attempting to use alternate WLF file "./wlftiwqr7s".
+#           Attempting to use alternate WLF file "./wlftsz4iai".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftiwqr7s
+#           Using alternate file: ./wlftsz4iai
 # ** Note: ********** sequential testbench start **********
 #    Time: 0 ns  Iteration: 0  Instance: /calculator2_tb
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
@@ -182,10 +182,5 @@
 #    Time: 2020 ns  Iteration: 0  Instance: /calculator2_tb
 # ** Note: ********** sequential testbench end **********
 #    Time: 2660 ns  Iteration: 0  Instance: /calculator2_tb
-run
-run
-run
-run
-run
-run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/hdl/lab5/sim/script/wave.do
+# End time: 15:53:27 on Oct 30,2023, Elapsed time: 0:02:59
+# Errors: 50, Warnings: 35

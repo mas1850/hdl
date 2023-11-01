@@ -1,5 +1,5 @@
 Timing Analyzer report for calculator2
-Mon Oct 30 15:21:55 2023
+Wed Nov 01 18:43:30 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -99,33 +99,30 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 1.20        ;
+; Average used               ; 1.16        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.3%      ;
-;     Processor 3            ;   2.3%      ;
-;     Processor 4            ;   2.3%      ;
-;     Processor 5            ;   2.2%      ;
-;     Processor 6            ;   2.2%      ;
-;     Processor 7            ;   2.2%      ;
-;     Processor 8            ;   2.2%      ;
-;     Processor 9            ;   2.2%      ;
-;     Processor 10           ;   2.2%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processor 3            ;   1.9%      ;
+;     Processor 4            ;   1.9%      ;
+;     Processor 5            ;   1.9%      ;
+;     Processor 6            ;   1.9%      ;
+;     Processor 7            ;   1.9%      ;
+;     Processor 8            ;   1.9%      ;
+;     Processor 9            ;   1.8%      ;
+;     Processor 10           ;   0.9%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                                               ;
-+-------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------+
-; Clock Name                                ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                       ;
-+-------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------+
-; clk                                       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                                       ;
-; pres_state.INPUT_A                        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pres_state.INPUT_A }                        ;
-; pres_state.INPUT_B                        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pres_state.INPUT_B }                        ;
-; rising_edge_synchronizer:sync_button|edge ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { rising_edge_synchronizer:sync_button|edge } ;
-+-------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
 +--------------------------------------------------+
@@ -133,7 +130,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 392.46 MHz ; 392.46 MHz      ; clk        ;      ;
+; 322.37 MHz ; 322.37 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -144,28 +141,22 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 HTML report is unavailable in plain text report export.
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 85C Model Setup Summary                                ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; pres_state.INPUT_B                        ; -4.608 ; -34.192       ;
-; pres_state.INPUT_A                        ; -4.560 ; -30.584       ;
-; rising_edge_synchronizer:sync_button|edge ; -4.210 ; -9.085        ;
-; clk                                       ; -3.322 ; -32.008       ;
-+-------------------------------------------+--------+---------------+
++-------------------------------------+
+; Slow 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -2.102 ; -29.377            ;
++-------+--------+--------------------+
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 85C Model Hold Summary                                 ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -3.362 ; -32.244       ;
-; rising_edge_synchronizer:sync_button|edge ; -0.828 ; -1.637        ;
-; pres_state.INPUT_A                        ; 2.561  ; 0.000         ;
-; pres_state.INPUT_B                        ; 3.084  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++------------------------------------+
+; Slow 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.353 ; 0.000              ;
++-------+-------+--------------------+
 
 
 ------------------------------------------
@@ -180,16 +171,13 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 85C Model Minimum Pulse Width Summary                  ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -0.394 ; -19.218       ;
-; rising_edge_synchronizer:sync_button|edge ; 0.315  ; 0.000         ;
-; pres_state.INPUT_B                        ; 0.388  ; 0.000         ;
-; pres_state.INPUT_A                        ; 0.417  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -0.394 ; -28.599                          ;
++-------+--------+----------------------------------+
 
 
 -----------------------------------------------
@@ -204,33 +192,27 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 393.55 MHz ; 393.55 MHz      ; clk        ;      ;
+; 320.31 MHz ; 320.31 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 0C Model Setup Summary                                 ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; pres_state.INPUT_B                        ; -4.694 ; -34.929       ;
-; pres_state.INPUT_A                        ; -4.605 ; -31.176       ;
-; rising_edge_synchronizer:sync_button|edge ; -4.318 ; -9.466        ;
-; clk                                       ; -3.180 ; -30.076       ;
-+-------------------------------------------+--------+---------------+
++------------------------------------+
+; Slow 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -2.122 ; -27.481           ;
++-------+--------+-------------------+
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 0C Model Hold Summary                                  ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -3.440 ; -33.308       ;
-; rising_edge_synchronizer:sync_button|edge ; -0.783 ; -1.549        ;
-; pres_state.INPUT_A                        ; 2.579  ; 0.000         ;
-; pres_state.INPUT_B                        ; 3.136  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++-----------------------------------+
+; Slow 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.322 ; 0.000             ;
++-------+-------+-------------------+
 
 
 -----------------------------------------
@@ -245,16 +227,13 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------------+
-; Slow 1100mV 0C Model Minimum Pulse Width Summary                   ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -0.394 ; -20.977       ;
-; rising_edge_synchronizer:sync_button|edge ; 0.357  ; 0.000         ;
-; pres_state.INPUT_B                        ; 0.398  ; 0.000         ;
-; pres_state.INPUT_A                        ; 0.408  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -0.394 ; -30.676                         ;
++-------+--------+---------------------------------+
 
 
 ----------------------------------------------
@@ -264,28 +243,22 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 85C Model Setup Summary                                ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; pres_state.INPUT_B                        ; -2.316 ; -16.852       ;
-; clk                                       ; -2.305 ; -20.958       ;
-; pres_state.INPUT_A                        ; -2.191 ; -13.461       ;
-; rising_edge_synchronizer:sync_button|edge ; -2.032 ; -4.080        ;
-+-------------------------------------------+--------+---------------+
++-------------------------------------+
+; Fast 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; clk   ; -0.892 ; -7.238             ;
++-------+--------+--------------------+
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 85C Model Hold Summary                                 ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -1.903 ; -17.339       ;
-; rising_edge_synchronizer:sync_button|edge ; -0.516 ; -1.022        ;
-; pres_state.INPUT_A                        ; 1.429  ; 0.000         ;
-; pres_state.INPUT_B                        ; 1.892  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++------------------------------------+
+; Fast 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; clk   ; 0.182 ; 0.000              ;
++-------+-------+--------------------+
 
 
 ------------------------------------------
@@ -300,47 +273,43 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 85C Model Minimum Pulse Width Summary                  ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -0.084 ; -3.035        ;
-; rising_edge_synchronizer:sync_button|edge ; 0.360  ; 0.000         ;
-; pres_state.INPUT_B                        ; 0.399  ; 0.000         ;
-; pres_state.INPUT_A                        ; 0.431  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; clk   ; -0.095 ; -4.943                           ;
++-------+--------+----------------------------------+
 
 
 -----------------------------------------------
 ; Fast 1100mV 85C Model Metastability Summary ;
 -----------------------------------------------
-Design MTBF is not calculated because the design doesn't meet its timing requirements.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 9
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.299 ns
 
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 0C Model Setup Summary                                 ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; pres_state.INPUT_B                        ; -2.237 ; -16.346       ;
-; pres_state.INPUT_A                        ; -2.047 ; -12.839       ;
-; rising_edge_synchronizer:sync_button|edge ; -1.994 ; -3.975        ;
-; clk                                       ; -1.821 ; -16.469       ;
-+-------------------------------------------+--------+---------------+
+
++------------------------------------+
+; Fast 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; clk   ; -0.758 ; -5.932            ;
++-------+--------+-------------------+
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 0C Model Hold Summary                                  ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -1.883 ; -17.548       ;
-; rising_edge_synchronizer:sync_button|edge ; -0.451 ; -0.895        ;
-; pres_state.INPUT_A                        ; 1.398  ; 0.000         ;
-; pres_state.INPUT_B                        ; 1.876  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++-----------------------------------+
+; Fast 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; clk   ; 0.172 ; 0.000             ;
++-------+-------+-------------------+
 
 
 -----------------------------------------
@@ -355,41 +324,37 @@ No paths to report.
 No paths to report.
 
 
-+--------------------------------------------------------------------+
-; Fast 1100mV 0C Model Minimum Pulse Width Summary                   ;
-+-------------------------------------------+--------+---------------+
-; Clock                                     ; Slack  ; End Point TNS ;
-+-------------------------------------------+--------+---------------+
-; clk                                       ; -0.084 ; -3.051        ;
-; rising_edge_synchronizer:sync_button|edge ; 0.395  ; 0.000         ;
-; pres_state.INPUT_B                        ; 0.414  ; 0.000         ;
-; pres_state.INPUT_A                        ; 0.443  ; 0.000         ;
-+-------------------------------------------+--------+---------------+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; clk   ; -0.090 ; -4.819                          ;
++-------+--------+---------------------------------+
 
 
 ----------------------------------------------
 ; Fast 1100mV 0C Model Metastability Summary ;
 ----------------------------------------------
-Design MTBF is not calculated because the design doesn't meet its timing requirements.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 9
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.407 ns
 
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                                        ;
-+--------------------------------------------+----------+---------+----------+---------+---------------------+
-; Clock                                      ; Setup    ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
-+--------------------------------------------+----------+---------+----------+---------+---------------------+
-; Worst-case Slack                           ; -4.694   ; -3.440  ; N/A      ; N/A     ; -0.394              ;
-;  clk                                       ; -3.322   ; -3.440  ; N/A      ; N/A     ; -0.394              ;
-;  pres_state.INPUT_A                        ; -4.605   ; 1.398   ; N/A      ; N/A     ; 0.408               ;
-;  pres_state.INPUT_B                        ; -4.694   ; 1.876   ; N/A      ; N/A     ; 0.388               ;
-;  rising_edge_synchronizer:sync_button|edge ; -4.318   ; -0.828  ; N/A      ; N/A     ; 0.315               ;
-; Design-wide TNS                            ; -105.869 ; -34.857 ; 0.0      ; 0.0     ; -20.977             ;
-;  clk                                       ; -32.008  ; -33.308 ; N/A      ; N/A     ; -20.977             ;
-;  pres_state.INPUT_A                        ; -31.176  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
-;  pres_state.INPUT_B                        ; -34.929  ; 0.000   ; N/A      ; N/A     ; 0.000               ;
-;  rising_edge_synchronizer:sync_button|edge ; -9.466   ; -1.637  ; N/A      ; N/A     ; 0.000               ;
-+--------------------------------------------+----------+---------+----------+---------+---------------------+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.122  ; 0.172 ; N/A      ; N/A     ; -0.394              ;
+;  clk             ; -2.122  ; 0.172 ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS  ; -29.377 ; 0.0   ; 0.0      ; 0.0     ; -30.676             ;
+;  clk             ; -29.377 ; 0.000 ; N/A      ; N/A     ; -30.676             ;
++------------------+---------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -576,39 +541,23 @@ Design MTBF is not calculated because the design doesn't meet its timing require
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                                                   ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
-; From Clock                                ; To Clock                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
-; clk                                       ; clk                                       ; 40       ; 0        ; 0        ; 0        ;
-; pres_state.INPUT_A                        ; clk                                       ; 125      ; 1        ; 0        ; 0        ;
-; pres_state.INPUT_B                        ; clk                                       ; 9        ; 133      ; 0        ; 0        ;
-; rising_edge_synchronizer:sync_button|edge ; clk                                       ; 0        ; 4        ; 0        ; 0        ;
-; clk                                       ; pres_state.INPUT_A                        ; 8        ; 0        ; 0        ; 0        ;
-; clk                                       ; pres_state.INPUT_B                        ; 0        ; 0        ; 8        ; 0        ;
-; clk                                       ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 2        ; 0        ;
-; pres_state.INPUT_A                        ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 1        ; 1        ;
-; pres_state.INPUT_B                        ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 1        ; 1        ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 348      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                                                    ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
-; From Clock                                ; To Clock                                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
-; clk                                       ; clk                                       ; 40       ; 0        ; 0        ; 0        ;
-; pres_state.INPUT_A                        ; clk                                       ; 125      ; 1        ; 0        ; 0        ;
-; pres_state.INPUT_B                        ; clk                                       ; 9        ; 133      ; 0        ; 0        ;
-; rising_edge_synchronizer:sync_button|edge ; clk                                       ; 0        ; 4        ; 0        ; 0        ;
-; clk                                       ; pres_state.INPUT_A                        ; 8        ; 0        ; 0        ; 0        ;
-; clk                                       ; pres_state.INPUT_B                        ; 0        ; 0        ; 8        ; 0        ;
-; clk                                       ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 2        ; 0        ;
-; pres_state.INPUT_A                        ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 1        ; 1        ;
-; pres_state.INPUT_B                        ; rising_edge_synchronizer:sync_button|edge ; 0        ; 0        ; 1        ; 1        ;
-+-------------------------------------------+-------------------------------------------+----------+----------+----------+----------+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 348      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -632,22 +581,19 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 10    ; 10   ;
-; Unconstrained Input Port Paths  ; 49    ; 49   ;
+; Unconstrained Input Port Paths  ; 51    ; 51   ;
 ; Unconstrained Output Ports      ; 25    ; 25   ;
 ; Unconstrained Output Port Paths ; 172   ; 172  ;
 +---------------------------------+-------+------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Clock Status Summary                                                                                       ;
-+-------------------------------------------+-------------------------------------------+------+-------------+
-; Target                                    ; Clock                                     ; Type ; Status      ;
-+-------------------------------------------+-------------------------------------------+------+-------------+
-; clk                                       ; clk                                       ; Base ; Constrained ;
-; pres_state.INPUT_A                        ; pres_state.INPUT_A                        ; Base ; Constrained ;
-; pres_state.INPUT_B                        ; pres_state.INPUT_B                        ; Base ; Constrained ;
-; rising_edge_synchronizer:sync_button|edge ; rising_edge_synchronizer:sync_button|edge ; Base ; Constrained ;
-+-------------------------------------------+-------------------------------------------+------+-------------+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; clk    ; clk   ; Base ; Constrained ;
++--------+-------+------+-------------+
 
 
 +-------------------------------------------------------------------------------------------------------+
@@ -758,50 +704,37 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Oct 30 15:21:51 2023
+    Info: Processing started: Wed Nov 01 18:43:26 2023
 Info: Command: quartus_sta calculator2 -c calculator2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
-Warning (335093): The Timing Analyzer is analyzing 20 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'calculator2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name pres_state.INPUT_B pres_state.INPUT_B
     Info (332105): create_clock -period 1.000 -name clk clk
-    Info (332105): create_clock -period 1.000 -name pres_state.INPUT_A pres_state.INPUT_A
-    Info (332105): create_clock -period 1.000 -name rising_edge_synchronizer:sync_button|edge rising_edge_synchronizer:sync_button|edge
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.608
+Info (332146): Worst-case setup slack is -2.102
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.608             -34.192 pres_state.INPUT_B 
-    Info (332119):    -4.560             -30.584 pres_state.INPUT_A 
-    Info (332119):    -4.210              -9.085 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):    -3.322             -32.008 clk 
-Info (332146): Worst-case hold slack is -3.362
+    Info (332119):    -2.102             -29.377 clk 
+Info (332146): Worst-case hold slack is 0.353
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.362             -32.244 clk 
-    Info (332119):    -0.828              -1.637 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     2.561               0.000 pres_state.INPUT_A 
-    Info (332119):     3.084               0.000 pres_state.INPUT_B 
+    Info (332119):     0.353               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -19.218 clk 
-    Info (332119):     0.315               0.000 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     0.388               0.000 pres_state.INPUT_B 
-    Info (332119):     0.417               0.000 pres_state.INPUT_A 
+    Info (332119):    -0.394             -28.599 clk 
 Info (332114): Report Metastability: Found 9 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Slow 1100mV 0C Model
@@ -810,29 +743,20 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -4.694
+Info (332146): Worst-case setup slack is -2.122
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.694             -34.929 pres_state.INPUT_B 
-    Info (332119):    -4.605             -31.176 pres_state.INPUT_A 
-    Info (332119):    -4.318              -9.466 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):    -3.180             -30.076 clk 
-Info (332146): Worst-case hold slack is -3.440
+    Info (332119):    -2.122             -27.481 clk 
+Info (332146): Worst-case hold slack is 0.322
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.440             -33.308 clk 
-    Info (332119):    -0.783              -1.549 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     2.579               0.000 pres_state.INPUT_A 
-    Info (332119):     3.136               0.000 pres_state.INPUT_B 
+    Info (332119):     0.322               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -0.394
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.394             -20.977 clk 
-    Info (332119):     0.357               0.000 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     0.398               0.000 pres_state.INPUT_B 
-    Info (332119):     0.408               0.000 pres_state.INPUT_A 
+    Info (332119):    -0.394             -30.676 clk 
 Info (332114): Report Metastability: Found 9 synchronizer chains.
     Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
 Info: Analyzing Fast 1100mV 85C Model
@@ -841,65 +765,57 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.316
+Info (332146): Worst-case setup slack is -0.892
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.316             -16.852 pres_state.INPUT_B 
-    Info (332119):    -2.305             -20.958 clk 
-    Info (332119):    -2.191             -13.461 pres_state.INPUT_A 
-    Info (332119):    -2.032              -4.080 rising_edge_synchronizer:sync_button|edge 
-Info (332146): Worst-case hold slack is -1.903
+    Info (332119):    -0.892              -7.238 clk 
+Info (332146): Worst-case hold slack is 0.182
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.903             -17.339 clk 
-    Info (332119):    -0.516              -1.022 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     1.429               0.000 pres_state.INPUT_A 
-    Info (332119):     1.892               0.000 pres_state.INPUT_B 
+    Info (332119):     0.182               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.084
+Info (332146): Worst-case minimum pulse width slack is -0.095
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.084              -3.035 clk 
-    Info (332119):     0.360               0.000 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     0.399               0.000 pres_state.INPUT_B 
-    Info (332119):     0.431               0.000 pres_state.INPUT_A 
+    Info (332119):    -0.095              -4.943 clk 
 Info (332114): Report Metastability: Found 9 synchronizer chains.
-    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 9
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.299 ns
+    Info (332114): 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
-Info (332146): Worst-case setup slack is -2.237
+Info (332146): Worst-case setup slack is -0.758
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.237             -16.346 pres_state.INPUT_B 
-    Info (332119):    -2.047             -12.839 pres_state.INPUT_A 
-    Info (332119):    -1.994              -3.975 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):    -1.821             -16.469 clk 
-Info (332146): Worst-case hold slack is -1.883
+    Info (332119):    -0.758              -5.932 clk 
+Info (332146): Worst-case hold slack is 0.172
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.883             -17.548 clk 
-    Info (332119):    -0.451              -0.895 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     1.398               0.000 pres_state.INPUT_A 
-    Info (332119):     1.876               0.000 pres_state.INPUT_B 
+    Info (332119):     0.172               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is -0.084
+Info (332146): Worst-case minimum pulse width slack is -0.090
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.084              -3.051 clk 
-    Info (332119):     0.395               0.000 rising_edge_synchronizer:sync_button|edge 
-    Info (332119):     0.414               0.000 pres_state.INPUT_B 
-    Info (332119):     0.443               0.000 pres_state.INPUT_A 
+    Info (332119):    -0.090              -4.819 clk 
 Info (332114): Report Metastability: Found 9 synchronizer chains.
-    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 9
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.407 ns
+    Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 7 warnings
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 5218 megabytes
-    Info: Processing ended: Mon Oct 30 15:21:55 2023
+    Info: Processing ended: Wed Nov 01 18:43:30 2023
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 

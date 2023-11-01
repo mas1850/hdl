@@ -18,7 +18,7 @@
 #
 # Quartus Prime
 # Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-# Date created = 15:21:03  October 30, 2023
+# Date created = 18:42:42  November 01, 2023
 #
 # -------------------------------------------------------------------------- #
 #
@@ -39,7 +39,7 @@
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:21:03  OCTOBER 30, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:42:42  NOVEMBER 01, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
 set_global_assignment -name TOP_LEVEL_ENTITY calculator2
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY ../output_files

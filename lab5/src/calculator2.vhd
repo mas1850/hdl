@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
 -- top level for lab 5 calculator
--- last modified 10/25/23
+-- last modified 10/11/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -90,35 +90,41 @@ begin
     edge            => btn_sync
   );
 
-  -- next state logic and state register
-  state_reg: process (clk, reset)
+  --next state logic and state register
+  --FIXED STATE REG / NSL BY ADDING
+  --state_reg: process(reset, clk) (reset first in sensitivity list)
+  --elsif(clk'event and clk='1') in state reg instead of elsif(rising_edge(clk))
+  --next_state <= pres_state at top of NSL
+
+  state_reg: process(reset, clk)
   begin
     if (reset = '1') then
       pres_state <= INPUT_A;
-    elsif(rising_edge(clk)) then
+    elsif(clk'event and clk='1') then
       pres_state <= next_state;
     end if;
   end process; -- end state register
 
   next_state_logic: process(pres_state, btn_sync)
   begin
+    next_state <= pres_state;
     case pres_state is
       when INPUT_A =>
         if (btn_sync = '1') then
           next_state <= INPUT_B;
         end if;
 
-      when INPUT_B =>
+        when INPUT_B =>
         if (btn_sync = '1') then
           next_state <= SUM;
         end if;
 
-      when SUM =>
+        when SUM =>
         if (btn_sync = '1') then
           next_state <= DIFF;
-        end if;      
+        end if;
 
-      when DIFF =>
+        when DIFF =>
         if (btn_sync = '1') then
           next_state <= INPUT_A;
         end if;

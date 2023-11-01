@@ -1,5 +1,5 @@
 Fitter report for calculator2
-Mon Oct 30 15:21:44 2023
+Wed Nov 01 18:43:19 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -62,15 +62,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Oct 30 15:21:44 2023           ;
+; Fitter Status                   ; Successful - Wed Nov 01 18:43:19 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; calculator2                                     ;
 ; Top-level Entity Name           ; calculator2                                     ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA5F31C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 59 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 37                                              ;
+; Logic utilization (in ALMs)     ; 51 / 32,070 ( < 1 % )                           ;
+; Total registers                 ; 55                                              ;
 ; Total pins                      ; 36 / 457 ( 8 % )                                ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
@@ -163,17 +163,19 @@ refer to the applicable agreement for further details.
 ;     Processor 7            ;   0.2%      ;
 ;     Processor 8            ;   0.2%      ;
 ;     Processor 9            ;   0.2%      ;
-;     Processor 10           ;   0.2%      ;
+;     Processor 10           ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Netlist Optimizations                                                                                                                                   ;
-+------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; Node             ; Action  ; Operation ; Reason                     ; Node Port ; Node Port Name ; Destination Node ; Destination Port ; Destination Port Name ;
-+------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
-; clk~inputCLKENA0 ; Created ; Placement ; Fitter Periphery Placement ;           ;                ;                  ;                  ;                       ;
-+------------------+---------+-----------+----------------------------+-----------+----------------+------------------+------------------+-----------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                                                       ;
++------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------+------------------+-----------------------+
+; Node             ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node          ; Destination Port ; Destination Port Name ;
++------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------+------------------+-----------------------+
+; clk~inputCLKENA0 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                           ;                  ;                       ;
+; pres_state.DIFF  ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pres_state.DIFF~DUPLICATE ;                  ;                       ;
+; pres_state.SUM   ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; pres_state.SUM~DUPLICATE  ;                  ;                       ;
++------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------------+------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -182,8 +184,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 197 ) ; 0.00 % ( 0 / 197 )         ; 0.00 % ( 0 / 197 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 197 ) ; 0.00 % ( 0 / 197 )         ; 0.00 % ( 0 / 197 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 196 ) ; 0.00 % ( 0 / 196 )         ; 0.00 % ( 0 / 196 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 196 ) ; 0.00 % ( 0 / 196 )         ; 0.00 % ( 0 / 196 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -206,7 +208,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 197 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 196 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -214,7 +216,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calculator2.pin.
+The pin-out file can be found in C:/Users/mas1850/hdl/hdl/lab5/hw/output_files/calculator2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -222,14 +224,14 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 59 / 32,070        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 59                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 64 / 32,070        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 15                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 45                 ;       ;
-;         [c] ALMs used for registers                         ; 4                  ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 51 / 32,070        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 51                 ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 59 / 32,070        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 17                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 33                 ;       ;
+;         [c] ALMs used for registers                         ; 9                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -238,25 +240,25 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 10 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 10                 ;       ;
+; Total LABs:  partially or completely used                   ; 9 / 3,207          ; < 1 % ;
+;     -- Logic LABs                                           ; 9                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 87                 ;       ;
+; Combinational ALUT usage for logic                          ; 70                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
 ;     -- 6 input functions                                    ; 30                 ;       ;
 ;     -- 5 input functions                                    ; 9                  ;       ;
-;     -- 4 input functions                                    ; 19                 ;       ;
-;     -- <=3 input functions                                  ; 29                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 5                  ;       ;
+;     -- 4 input functions                                    ; 3                  ;       ;
+;     -- <=3 input functions                                  ; 28                 ;       ;
+; Combinational ALUT usage for route-throughs                 ; 6                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 37                 ;       ;
+; Dedicated logic registers                                   ; 55                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
-;         -- Primary logic registers                          ; 37 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 0 / 64,140         ; 0 %   ;
+;         -- Primary logic registers                          ; 51 / 64,140        ; < 1 % ;
+;         -- Secondary logic registers                        ; 4 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
-;         -- Design implementation registers                  ; 37                 ;       ;
-;         -- Routing optimization registers                   ; 0                  ;       ;
+;         -- Design implementation registers                  ; 53                 ;       ;
+;         -- Routing optimization registers                   ; 2                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 36 / 457           ; 8 %   ;
@@ -311,11 +313,11 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ; Oscillator blocks                                           ; 0 / 1              ; 0 %   ;
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
-; Average interconnect usage (total/H/V)                      ; 0.2% / 0.2% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 3.0% / 3.0% / 3.0% ;       ;
-; Maximum fan-out                                             ; 40                 ;       ;
-; Highest non-global fan-out                                  ; 40                 ;       ;
-; Total fan-out                                               ; 535                ;       ;
+; Average interconnect usage (total/H/V)                      ; 0.1% / 0.1% / 0.0% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.6% / 0.7% / 0.7% ;       ;
+; Maximum fan-out                                             ; 55                 ;       ;
+; Highest non-global fan-out                                  ; 42                 ;       ;
+; Total fan-out                                               ; 541                ;       ;
 ; Average fan-out                                             ; 2.65               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
@@ -325,14 +327,14 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 59 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 59                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 64 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 15                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 45                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 4                    ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 51 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 51                   ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 59 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 17                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 33                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 9                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 8 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -341,28 +343,28 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ;                                                             ;                      ;                                ;
 ; Difficulty packing design                                   ; Low                  ; Low                            ;
 ;                                                             ;                      ;                                ;
-; Total LABs:  partially or completely used                   ; 10 / 3207 ( < 1 % )  ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 10                   ; 0                              ;
+; Total LABs:  partially or completely used                   ; 9 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 9                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 87                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 70                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
 ;     -- 6 input functions                                    ; 30                   ; 0                              ;
 ;     -- 5 input functions                                    ; 9                    ; 0                              ;
-;     -- 4 input functions                                    ; 19                   ; 0                              ;
-;     -- <=3 input functions                                  ; 29                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 5                    ; 0                              ;
+;     -- 4 input functions                                    ; 3                    ; 0                              ;
+;     -- <=3 input functions                                  ; 28                   ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 6                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
-;         -- Primary logic registers                          ; 37 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 0 / 64140 ( 0 % )    ; 0 / 64140 ( 0 % )              ;
+;         -- Primary logic registers                          ; 51 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 4 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
-;         -- Design implementation registers                  ; 37                   ; 0                              ;
-;         -- Routing optimization registers                   ; 0                    ; 0                              ;
+;         -- Design implementation registers                  ; 53                   ; 0                              ;
+;         -- Routing optimization registers                   ; 2                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -379,8 +381,8 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 543                  ; 0                              ;
-;     -- Registered Connections                               ; 140                  ; 0                              ;
+;     -- Total Connections                                    ; 549                  ; 0                              ;
+;     -- Registered Connections                               ; 192                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -413,7 +415,7 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ; Name           ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; btn            ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; clk            ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 37                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clk            ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 55                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; in_switches[0] ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; in_switches[1] ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; in_switches[2] ; AD11  ; 3A       ; 2            ; 0            ; 40           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
@@ -422,7 +424,7 @@ The pin-out file can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calcu
 ; in_switches[5] ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; in_switches[6] ; AD10  ; 3A       ; 4            ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; in_switches[7] ; AE12  ; 3A       ; 2            ; 0            ; 57           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
-; reset          ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 40                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; reset          ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 42                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -1435,13 +1437,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Entity Name              ; Library Name ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------+--------------------------+--------------+
-; |calculator2                              ; 59.0 (27.8)          ; 63.0 (27.9)                      ; 4.0 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 87 (52)             ; 37 (17)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |calculator2                                      ; calculator2              ; work         ;
-;    |double_dabble:dd|                     ; 10.0 (10.0)          ; 10.2 (10.2)                      ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (12)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|double_dabble:dd                     ; double_dabble            ; work         ;
-;    |rising_edge_synchronizer:sync_button| ; 1.0 (1.0)            ; 2.0 (2.0)                        ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|rising_edge_synchronizer:sync_button ; rising_edge_synchronizer ; work         ;
+; |calculator2                              ; 50.5 (21.5)          ; 58.0 (21.7)                      ; 7.5 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 70 (35)             ; 55 (35)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 36   ; 0            ; |calculator2                                      ; calculator2              ; work         ;
+;    |double_dabble:dd|                     ; 10.0 (10.0)          ; 10.0 (10.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 12 (12)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|double_dabble:dd                     ; double_dabble            ; work         ;
+;    |rising_edge_synchronizer:sync_button| ; 0.7 (0.7)            ; 2.0 (2.0)                        ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|rising_edge_synchronizer:sync_button ; rising_edge_synchronizer ; work         ;
 ;    |seven_seg:display_hundreds|           ; 7.0 (7.0)            ; 7.0 (7.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|seven_seg:display_hundreds           ; seven_seg                ; work         ;
 ;    |seven_seg:display_ones|               ; 7.0 (7.0)            ; 7.0 (7.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|seven_seg:display_ones               ; seven_seg                ; work         ;
 ;    |seven_seg:display_tens|               ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|seven_seg:display_tens               ; seven_seg                ; work         ;
-;    |synchronizer_8bit:sync_input|         ; 2.3 (2.3)            ; 4.9 (4.9)                        ; 2.7 (2.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|synchronizer_8bit:sync_input         ; synchronizer_8bit        ; work         ;
+;    |synchronizer_8bit:sync_input|         ; 0.3 (0.3)            ; 6.3 (6.3)                        ; 6.0 (6.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 16 (16)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |calculator2|synchronizer_8bit:sync_input         ; synchronizer_8bit        ; work         ;
 +-------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------------------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1480,13 +1482,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; reset          ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; in_switches[6] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; in_switches[5] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; in_switches[4] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; in_switches[7] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; in_switches[4] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; in_switches[7] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; in_switches[2] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; in_switches[3] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; in_switches[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; in_switches[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; btn            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; in_switches[3] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; in_switches[1] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; in_switches[0] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; btn            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +----------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1497,6 +1499,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------+-------------------+---------+
 ; clk                                                   ;                   ;         ;
 ; reset                                                 ;                   ;         ;
+;      - in_b[0]                                        ; 1                 ; 0       ;
+;      - in_b[1]                                        ; 1                 ; 0       ;
+;      - in_b[2]                                        ; 1                 ; 0       ;
+;      - in_b[3]                                        ; 1                 ; 0       ;
+;      - in_b[4]                                        ; 1                 ; 0       ;
+;      - in_b[5]                                        ; 1                 ; 0       ;
+;      - in_b[6]                                        ; 1                 ; 0       ;
+;      - in_b[7]                                        ; 1                 ; 0       ;
+;      - in_a[0]                                        ; 1                 ; 0       ;
+;      - in_a[1]                                        ; 1                 ; 0       ;
+;      - in_a[2]                                        ; 1                 ; 0       ;
+;      - in_a[3]                                        ; 1                 ; 0       ;
+;      - in_a[4]                                        ; 1                 ; 0       ;
+;      - in_a[5]                                        ; 1                 ; 0       ;
+;      - in_a[6]                                        ; 1                 ; 0       ;
+;      - in_a[7]                                        ; 1                 ; 0       ;
+;      - rising_edge_synchronizer:sync_button|edge      ; 1                 ; 0       ;
 ;      - pres_state.INPUT_A                             ; 1                 ; 0       ;
 ;      - pres_state.INPUT_B                             ; 1                 ; 0       ;
 ;      - pres_state.SUM                                 ; 1                 ; 0       ;
@@ -1509,7 +1528,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - synchronizer_8bit:sync_input|flop2[3]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop2[1]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop2[0]          ; 1                 ; 0       ;
-;      - rising_edge_synchronizer:sync_button|edge      ; 1                 ; 0       ;
+;      - rising_edge_synchronizer:sync_button|input_zz  ; 1                 ; 0       ;
+;      - rising_edge_synchronizer:sync_button|input_zzz ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop1[6]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop1[5]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop1[4]          ; 1                 ; 0       ;
@@ -1518,57 +1538,40 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - synchronizer_8bit:sync_input|flop1[3]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop1[1]          ; 1                 ; 0       ;
 ;      - synchronizer_8bit:sync_input|flop1[0]          ; 1                 ; 0       ;
-;      - rising_edge_synchronizer:sync_button|input_zz  ; 1                 ; 0       ;
-;      - rising_edge_synchronizer:sync_button|input_zzz ; 1                 ; 0       ;
 ;      - rising_edge_synchronizer:sync_button|input_z   ; 1                 ; 0       ;
-;      - in_a[6]                                        ; 1                 ; 0       ;
-;      - in_b[6]                                        ; 1                 ; 0       ;
-;      - in_a[5]                                        ; 1                 ; 0       ;
-;      - in_b[5]                                        ; 1                 ; 0       ;
-;      - in_a[4]                                        ; 1                 ; 0       ;
-;      - in_b[4]                                        ; 1                 ; 0       ;
-;      - in_a[7]                                        ; 1                 ; 0       ;
-;      - in_b[7]                                        ; 1                 ; 0       ;
-;      - in_a[2]                                        ; 1                 ; 0       ;
-;      - in_b[2]                                        ; 1                 ; 0       ;
-;      - in_a[3]                                        ; 1                 ; 0       ;
-;      - in_b[3]                                        ; 1                 ; 0       ;
-;      - in_a[1]                                        ; 1                 ; 0       ;
-;      - in_b[1]                                        ; 1                 ; 0       ;
-;      - in_a[0]                                        ; 1                 ; 0       ;
-;      - in_b[0]                                        ; 1                 ; 0       ;
+;      - pres_state.DIFF~DUPLICATE                      ; 1                 ; 0       ;
+;      - pres_state.SUM~DUPLICATE                       ; 1                 ; 0       ;
 ; in_switches[6]                                        ;                   ;         ;
 ;      - synchronizer_8bit:sync_input|flop1[6]          ; 1                 ; 0       ;
 ; in_switches[5]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[5]          ; 0                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[5]~feeder   ; 0                 ; 0       ;
 ; in_switches[4]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[4]          ; 0                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[4]          ; 1                 ; 0       ;
 ; in_switches[7]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[7]          ; 0                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[7]          ; 1                 ; 0       ;
 ; in_switches[2]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[2]          ; 0                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[2]~feeder   ; 0                 ; 0       ;
 ; in_switches[3]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[3]          ; 1                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[3]~feeder   ; 0                 ; 0       ;
 ; in_switches[1]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[1]          ; 1                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[1]          ; 0                 ; 0       ;
 ; in_switches[0]                                        ;                   ;         ;
-;      - synchronizer_8bit:sync_input|flop1[0]          ; 1                 ; 0       ;
+;      - synchronizer_8bit:sync_input|flop1[0]~feeder   ; 0                 ; 0       ;
 ; btn                                                   ;                   ;         ;
-;      - rising_edge_synchronizer:sync_button|input_z~0 ; 0                 ; 0       ;
+;      - rising_edge_synchronizer:sync_button|input_z~0 ; 1                 ; 0       ;
 +-------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                   ;
-+-------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                      ; Location      ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+-------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk                                       ; PIN_AF14      ; 37      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; pres_state.INPUT_A                        ; FF_X80_Y6_N11 ; 10      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; pres_state.INPUT_B                        ; FF_X80_Y6_N50 ; 11      ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; reset                                     ; PIN_AB12      ; 40      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; rising_edge_synchronizer:sync_button|edge ; FF_X78_Y6_N23 ; 4       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-+-------------------------------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                            ;
++--------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name               ; Location      ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk                ; PIN_AF14      ; 55      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; pres_state.INPUT_A ; FF_X40_Y4_N20 ; 11      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; pres_state.INPUT_B ; FF_X40_Y4_N41 ; 12      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; reset              ; PIN_AB12      ; 42      ; Async. clear ; no     ; --                   ; --               ; --                        ;
++--------------------+---------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -1576,7 +1579,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AF14 ; 37      ; Global Clock         ; GCLK6            ; --                        ;
+; clk  ; PIN_AF14 ; 55      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1585,14 +1588,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 178 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 24 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 86 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 94 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 126 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 4 / 13,420 ( < 1 % )    ;
+; C2 interconnects                            ; 33 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 48 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 22 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 18 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1648,13 +1651,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 28 / 84,580 ( < 1 % )   ;
+; Local interconnects                         ; 26 / 84,580 ( < 1 % )   ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 129 / 12,676 ( 1 % )    ;
-; R14/C12 interconnect drivers                ; 142 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 127 / 130,992 ( < 1 % ) ;
+; R14 interconnects                           ; 18 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 19 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 52 / 130,992 ( < 1 % )  ;
 ; R6 interconnects                            ; 141 / 266,960 ( < 1 % ) ;
-; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
+; Spine clocks                                ; 2 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
 
@@ -1800,53 +1803,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                        ;
-+-------------------------------------------+----------------------+-------------------+
-; Source Clock(s)                           ; Destination Clock(s) ; Delay Added in ns ;
-+-------------------------------------------+----------------------+-------------------+
-; pres_state.INPUT_A                        ; clk                  ; 66.1              ;
-; pres_state.INPUT_B                        ; clk                  ; 62.4              ;
-; pres_state.INPUT_B,pres_state.INPUT_A     ; clk                  ; 34.5              ;
-; clk                                       ; clk                  ; 25.7              ;
-; rising_edge_synchronizer:sync_button|edge ; clk                  ; 4.2               ;
-+-------------------------------------------+----------------------+-------------------+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clk             ; clk                  ; 6.3               ;
++-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                      ;
-+------------------------------------------------+-----------------------------------------------+-------------------+
-; Source Register                                ; Destination Register                          ; Delay Added in ns ;
-+------------------------------------------------+-----------------------------------------------+-------------------+
-; pres_state.INPUT_B                             ; res[3]                                        ; 5.241             ;
-; pres_state.INPUT_A                             ; state_led[3]~reg0                             ; 4.905             ;
-; in_a[2]                                        ; res[2]                                        ; 4.626             ;
-; in_a[1]                                        ; res[1]                                        ; 4.621             ;
-; in_b[0]                                        ; res[0]                                        ; 4.594             ;
-; in_a[0]                                        ; res[0]                                        ; 4.582             ;
-; in_a[4]                                        ; res[4]                                        ; 4.526             ;
-; in_a[3]                                        ; res[3]                                        ; 4.497             ;
-; in_a[6]                                        ; res[6]                                        ; 4.468             ;
-; in_a[7]                                        ; res[7]                                        ; 4.313             ;
-; in_b[2]                                        ; res[2]                                        ; 4.303             ;
-; in_a[5]                                        ; res[5]                                        ; 4.302             ;
-; in_b[1]                                        ; res[1]                                        ; 4.244             ;
-; in_b[5]                                        ; res[5]                                        ; 4.209             ;
-; next_state.INPUT_A_417                         ; pres_state.INPUT_A                            ; 4.196             ;
-; in_b[4]                                        ; res[4]                                        ; 4.160             ;
-; in_b[6]                                        ; res[6]                                        ; 4.149             ;
-; in_b[3]                                        ; res[3]                                        ; 4.108             ;
-; in_b[7]                                        ; res[7]                                        ; 3.942             ;
-; pres_state.SUM                                 ; res[3]                                        ; 1.432             ;
-; rising_edge_synchronizer:sync_button|input_zz  ; rising_edge_synchronizer:sync_button|edge     ; 0.196             ;
-; pres_state.DIFF                                ; res[8]                                        ; 0.183             ;
-; rising_edge_synchronizer:sync_button|input_zzz ; rising_edge_synchronizer:sync_button|edge     ; 0.154             ;
-; synchronizer_8bit:sync_input|flop1[7]          ; synchronizer_8bit:sync_input|flop2[7]         ; 0.023             ;
-; rising_edge_synchronizer:sync_button|input_z   ; rising_edge_synchronizer:sync_button|input_zz ; 0.023             ;
-+------------------------------------------------+-----------------------------------------------+-------------------+
-Note: This table only shows the top 25 path(s) that have the largest delay added for hold.
++----------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                  ;
++------------------------------------------------+-------------------------------------------+-------------------+
+; Source Register                                ; Destination Register                      ; Delay Added in ns ;
++------------------------------------------------+-------------------------------------------+-------------------+
+; rising_edge_synchronizer:sync_button|input_zz  ; rising_edge_synchronizer:sync_button|edge ; 0.299             ;
+; pres_state.DIFF                                ; pres_state.INPUT_A                        ; 0.293             ;
+; in_a[2]                                        ; res[2]                                    ; 0.285             ;
+; in_a[3]                                        ; res[3]                                    ; 0.277             ;
+; pres_state.INPUT_B                             ; pres_state.SUM                            ; 0.257             ;
+; in_b[7]                                        ; res[7]                                    ; 0.255             ;
+; in_b[4]                                        ; res[4]                                    ; 0.255             ;
+; pres_state.SUM                                 ; pres_state.DIFF                           ; 0.255             ;
+; in_a[7]                                        ; res[7]                                    ; 0.253             ;
+; in_b[6]                                        ; res[7]                                    ; 0.253             ;
+; in_a[6]                                        ; res[7]                                    ; 0.253             ;
+; in_b[0]                                        ; res[7]                                    ; 0.253             ;
+; in_a[0]                                        ; res[7]                                    ; 0.253             ;
+; in_b[1]                                        ; res[7]                                    ; 0.253             ;
+; in_a[1]                                        ; res[7]                                    ; 0.253             ;
+; in_b[2]                                        ; res[7]                                    ; 0.253             ;
+; in_b[3]                                        ; res[7]                                    ; 0.253             ;
+; in_a[4]                                        ; res[7]                                    ; 0.253             ;
+; in_b[5]                                        ; res[7]                                    ; 0.253             ;
+; in_a[5]                                        ; res[7]                                    ; 0.253             ;
+; rising_edge_synchronizer:sync_button|input_zzz ; rising_edge_synchronizer:sync_button|edge ; 0.253             ;
+; pres_state.INPUT_A                             ; pres_state.INPUT_B                        ; 0.248             ;
+; rising_edge_synchronizer:sync_button|edge      ; pres_state.INPUT_A                        ; 0.233             ;
+; synchronizer_8bit:sync_input|flop1[1]          ; synchronizer_8bit:sync_input|flop2[1]     ; 0.128             ;
+; synchronizer_8bit:sync_input|flop1[5]          ; synchronizer_8bit:sync_input|flop2[5]     ; 0.128             ;
+; synchronizer_8bit:sync_input|flop1[0]          ; synchronizer_8bit:sync_input|flop2[0]     ; 0.127             ;
+; synchronizer_8bit:sync_input|flop1[2]          ; synchronizer_8bit:sync_input|flop2[2]     ; 0.115             ;
+; synchronizer_8bit:sync_input|flop1[3]          ; synchronizer_8bit:sync_input|flop2[3]     ; 0.114             ;
++------------------------------------------------+-------------------------------------------+-------------------+
+Note: This table only shows the top 28 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1861,10 +1863,9 @@ Info (171003): Fitter is performing an Auto Fit compilation, which may decrease 
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
-    Info (11162): clk~inputCLKENA0 with 37 fanout uses global clock CLKCTRL_G6
+    Info (11162): clk~inputCLKENA0 with 53 fanout uses global clock CLKCTRL_G6
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
-Warning (335093): The Timing Analyzer is analyzing 20 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'calculator2.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1872,37 +1873,36 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:08
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:09
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X78_Y0 to location X89_Y10
-Info (188005): Design requires adding a large amount of routing delay for some signals to meet hold time requirements, and there is an excessive demand for the available routing resources. The Fitter is reducing the routing delays of some signals to help the routing algorithm converge, but doing so may cause hold time failures. For more information, refer to the "Estimated Delay Added for Hold Timing" section in the Fitter report.
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X44_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 0.40 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file C:/Users/mas1850/hdl/lab5/hw/output_files/calculator2.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 7177 megabytes
-    Info: Processing ended: Mon Oct 30 15:21:44 2023
-    Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:52
+Info (144001): Generated suppressed messages file C:/Users/mas1850/hdl/hdl/lab5/hw/output_files/calculator2.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 7176 megabytes
+    Info: Processing ended: Wed Nov 01 18:43:19 2023
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:48
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/mas1850/hdl/lab5/hw/output_files/calculator2.fit.smsg.
+The suppressed messages can be found in C:/Users/mas1850/hdl/hdl/lab5/hw/output_files/calculator2.fit.smsg.
 
 

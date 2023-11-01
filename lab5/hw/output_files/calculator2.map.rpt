@@ -1,5 +1,5 @@
 Analysis & Synthesis report for calculator2
-Mon Oct 30 15:21:13 2023
+Wed Nov 01 18:42:51 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -14,14 +14,13 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |calculator2|pres_state
-  9. User-Specified and Inferred Latches
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "double_dabble:dd"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "double_dabble:dd"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -47,13 +46,13 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Oct 30 15:21:13 2023           ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 01 18:42:51 2023           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; calculator2                                     ;
 ; Top-level Entity Name           ; calculator2                                     ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 37                                              ;
+; Total registers                 ; 53                                              ;
 ; Total pins                      ; 36                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
@@ -171,44 +170,44 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                          ;
-+-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
-+-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
-; ../../src/calculator2.vhd                     ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/lab5/src/calculator2.vhd                     ;         ;
-; ../../src/rising_edge_synchronizer.vhd        ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/lab5/src/rising_edge_synchronizer.vhd        ;         ;
-; ../../src/seven_seg.vhd                       ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/lab5/src/seven_seg.vhd                       ;         ;
-; ../../src/synchronizer_8bit.vhd               ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/lab5/src/synchronizer_8bit.vhd               ;         ;
-; ../../src/double_dabble/src/double_dabble.vhd ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/lab5/src/double_dabble/src/double_dabble.vhd ;         ;
-+-----------------------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path              ; Used in Netlist ; File Type       ; File Name with Absolute Path                                          ; Library ;
++-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
+; ../../src/calculator2.vhd                     ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd                     ;         ;
+; ../../src/rising_edge_synchronizer.vhd        ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/hdl/lab5/src/rising_edge_synchronizer.vhd        ;         ;
+; ../../src/seven_seg.vhd                       ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/hdl/lab5/src/seven_seg.vhd                       ;         ;
+; ../../src/synchronizer_8bit.vhd               ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/hdl/lab5/src/synchronizer_8bit.vhd               ;         ;
+; ../../src/double_dabble/src/double_dabble.vhd ; yes             ; User VHDL File  ; C:/Users/mas1850/hdl/hdl/lab5/src/double_dabble/src/double_dabble.vhd ;         ;
++-----------------------------------------------+-----------------+-----------------+-----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimate of Logic utilization (ALMs needed) ; 60          ;
-;                                             ;             ;
-; Combinational ALUT usage for logic          ; 86          ;
-;     -- 7 input functions                    ; 0           ;
-;     -- 6 input functions                    ; 30          ;
-;     -- 5 input functions                    ; 9           ;
-;     -- 4 input functions                    ; 19          ;
-;     -- <=3 input functions                  ; 28          ;
-;                                             ;             ;
-; Dedicated logic registers                   ; 37          ;
-;                                             ;             ;
-; I/O pins                                    ; 36          ;
-;                                             ;             ;
-; Total DSP Blocks                            ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 40          ;
-; Total fan-out                               ; 529         ;
-; Average fan-out                             ; 2.71        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 52        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 69        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 30        ;
+;     -- 5 input functions                    ; 9         ;
+;     -- 4 input functions                    ; 3         ;
+;     -- <=3 input functions                  ; 27        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 53        ;
+;                                             ;           ;
+; I/O pins                                    ; 36        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 53        ;
+; Total fan-out                               ; 528       ;
+; Average fan-out                             ; 2.72      ;
++---------------------------------------------+-----------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -216,7 +215,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                               ; Entity Name              ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------+--------------------------+--------------+
-; |calculator2                              ; 86 (51)             ; 37 (17)                   ; 0                 ; 0          ; 36   ; 0            ; |calculator2                                      ; calculator2              ; work         ;
+; |calculator2                              ; 69 (34)             ; 53 (33)                   ; 0                 ; 0          ; 36   ; 0            ; |calculator2                                      ; calculator2              ; work         ;
 ;    |double_dabble:dd|                     ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |calculator2|double_dabble:dd                     ; double_dabble            ; work         ;
 ;    |rising_edge_synchronizer:sync_button| ; 2 (2)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |calculator2|rising_edge_synchronizer:sync_button ; rising_edge_synchronizer ; work         ;
 ;    |seven_seg:display_hundreds|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |calculator2|seven_seg:display_hundreds           ; seven_seg                ; work         ;
@@ -240,47 +239,17 @@ Encoding Type:  One-Hot
 +--------------------+-----------------+----------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                      ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal                       ; Free of Timing Hazards ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
-; in_a[7]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[7]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[6]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[6]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[5]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[5]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[4]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[4]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[3]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[3]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[2]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[2]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[1]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[1]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; in_a[0]                                             ; pres_state.INPUT_A                        ; yes                    ;
-; in_b[0]                                             ; pres_state.INPUT_B                        ; yes                    ;
-; next_state.DIFF_381                                 ; rising_edge_synchronizer:sync_button|edge ; yes                    ;
-; next_state.SUM_393                                  ; rising_edge_synchronizer:sync_button|edge ; yes                    ;
-; next_state.INPUT_B_405                              ; rising_edge_synchronizer:sync_button|edge ; yes                    ;
-; next_state.INPUT_A_417                              ; rising_edge_synchronizer:sync_button|edge ; yes                    ;
-; Number of user-specified and inferred latches = 20  ;                                           ;                        ;
-+-----------------------------------------------------+-------------------------------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
-
-
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 37    ;
+; Total registers                              ; 53    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 24    ;
+; Number of registers using Asynchronous Clear ; 40    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -302,8 +271,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |calculator2|res[7]                                  ;
-; 16:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |calculator2|seven_seg:display_tens|seven_seg_out[4] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |calculator2|res[4]                                  ;
+; 16:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |calculator2|seven_seg:display_tens|seven_seg_out[3] ;
 ; 16:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |calculator2|seven_seg:display_ones|seven_seg_out[4] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
@@ -322,18 +291,19 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 37                          ;
+; arriav_ff             ; 53                          ;
 ;     CLR               ; 24                          ;
+;     ENA CLR           ; 16                          ;
 ;     plain             ; 13                          ;
-; arriav_lcell_comb     ; 90                          ;
+; arriav_lcell_comb     ; 73                          ;
 ;     arith             ; 9                           ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 8                           ;
-;     normal            ; 72                          ;
-;         1 data inputs ; 7                           ;
+;     normal            ; 55                          ;
+;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 4                           ;
-;         4 data inputs ; 19                          ;
+;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 9                           ;
 ;         6 data inputs ; 30                          ;
 ;     shared            ; 9                           ;
@@ -342,7 +312,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; boundary_port         ; 36                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.01                        ;
+; Average LUT depth     ; 2.08                        ;
 +-----------------------+-----------------------------+
 
 
@@ -361,69 +331,43 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Oct 30 15:21:04 2023
+    Info: Processing started: Wed Nov 01 18:42:43 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off calculator2 -c calculator2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/lab5/src/calculator2.vhd
-    Info (12022): Found design unit 1: calculator2-beh File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 23
-    Info (12023): Found entity 1: calculator2 File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/lab5/src/rising_edge_synchronizer.vhd
-    Info (12022): Found design unit 1: rising_edge_synchronizer-beh File: C:/Users/mas1850/hdl/lab5/src/rising_edge_synchronizer.vhd Line: 17
-    Info (12023): Found entity 1: rising_edge_synchronizer File: C:/Users/mas1850/hdl/lab5/src/rising_edge_synchronizer.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/lab5/src/seven_seg.vhd
-    Info (12022): Found design unit 1: seven_seg-beh File: C:/Users/mas1850/hdl/lab5/src/seven_seg.vhd Line: 16
-    Info (12023): Found entity 1: seven_seg File: C:/Users/mas1850/hdl/lab5/src/seven_seg.vhd Line: 9
-Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/lab5/src/synchronizer_8bit.vhd
-    Info (12022): Found design unit 1: synchronizer_8bit-beh File: C:/Users/mas1850/hdl/lab5/src/synchronizer_8bit.vhd Line: 17
-    Info (12023): Found entity 1: synchronizer_8bit File: C:/Users/mas1850/hdl/lab5/src/synchronizer_8bit.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/lab5/src/double_dabble/src/double_dabble.vhd
-    Info (12022): Found design unit 1: double_dabble-beh File: C:/Users/mas1850/hdl/lab5/src/double_dabble/src/double_dabble.vhd Line: 18
-    Info (12023): Found entity 1: double_dabble File: C:/Users/mas1850/hdl/lab5/src/double_dabble/src/double_dabble.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/hdl/lab5/src/calculator2.vhd
+    Info (12022): Found design unit 1: calculator2-beh File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 23
+    Info (12023): Found entity 1: calculator2 File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/hdl/lab5/src/rising_edge_synchronizer.vhd
+    Info (12022): Found design unit 1: rising_edge_synchronizer-beh File: C:/Users/mas1850/hdl/hdl/lab5/src/rising_edge_synchronizer.vhd Line: 17
+    Info (12023): Found entity 1: rising_edge_synchronizer File: C:/Users/mas1850/hdl/hdl/lab5/src/rising_edge_synchronizer.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/hdl/lab5/src/seven_seg.vhd
+    Info (12022): Found design unit 1: seven_seg-beh File: C:/Users/mas1850/hdl/hdl/lab5/src/seven_seg.vhd Line: 16
+    Info (12023): Found entity 1: seven_seg File: C:/Users/mas1850/hdl/hdl/lab5/src/seven_seg.vhd Line: 9
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/hdl/lab5/src/synchronizer_8bit.vhd
+    Info (12022): Found design unit 1: synchronizer_8bit-beh File: C:/Users/mas1850/hdl/hdl/lab5/src/synchronizer_8bit.vhd Line: 17
+    Info (12023): Found entity 1: synchronizer_8bit File: C:/Users/mas1850/hdl/hdl/lab5/src/synchronizer_8bit.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/mas1850/hdl/hdl/lab5/src/double_dabble/src/double_dabble.vhd
+    Info (12022): Found design unit 1: double_dabble-beh File: C:/Users/mas1850/hdl/hdl/lab5/src/double_dabble/src/double_dabble.vhd Line: 18
+    Info (12023): Found entity 1: double_dabble File: C:/Users/mas1850/hdl/hdl/lab5/src/double_dabble/src/double_dabble.vhd Line: 9
 Info (12127): Elaborating entity "calculator2" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at calculator2.vhd(103): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 103
-Warning (10492): VHDL Process Statement warning at calculator2.vhd(131): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 131
-Warning (10492): VHDL Process Statement warning at calculator2.vhd(134): signal "pres_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at calculator2.vhd(135): signal "in_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 135
-Warning (10492): VHDL Process Statement warning at calculator2.vhd(136): signal "pres_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 136
-Warning (10492): VHDL Process Statement warning at calculator2.vhd(137): signal "in_sync" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 137
-Warning (10631): VHDL Process Statement warning at calculator2.vhd(129): inferring latch(es) for signal or variable "in_a", which holds its previous value in one or more paths through the process File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Warning (10631): VHDL Process Statement warning at calculator2.vhd(129): inferring latch(es) for signal or variable "in_b", which holds its previous value in one or more paths through the process File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[0]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[1]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[2]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[3]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[4]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[5]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[6]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_b[7]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[0]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[1]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[2]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[3]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[4]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[5]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[6]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "in_a[7]" at calculator2.vhd(129) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 129
-Info (10041): Inferred latch for "next_state.DIFF" at calculator2.vhd(103) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 103
-Info (10041): Inferred latch for "next_state.SUM" at calculator2.vhd(103) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 103
-Info (10041): Inferred latch for "next_state.INPUT_B" at calculator2.vhd(103) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 103
-Info (10041): Inferred latch for "next_state.INPUT_A" at calculator2.vhd(103) File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 103
-Info (12128): Elaborating entity "synchronizer_8bit" for hierarchy "synchronizer_8bit:sync_input" File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 77
-Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:sync_button" File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 85
-Info (12128): Elaborating entity "double_dabble" for hierarchy "double_dabble:dd" File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 187
-Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:display_hundreds" File: C:/Users/mas1850/hdl/lab5/src/calculator2.vhd Line: 195
+Warning (10492): VHDL Process Statement warning at calculator2.vhd(171): signal "pres_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 171
+Warning (10492): VHDL Process Statement warning at calculator2.vhd(173): signal "pres_state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 173
+Info (12128): Elaborating entity "synchronizer_8bit" for hierarchy "synchronizer_8bit:sync_input" File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 77
+Info (12128): Elaborating entity "rising_edge_synchronizer" for hierarchy "rising_edge_synchronizer:sync_button" File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 85
+Info (12128): Elaborating entity "double_dabble" for hierarchy "double_dabble:dd" File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 224
+Info (12128): Elaborating entity "seven_seg" for hierarchy "seven_seg:display_hundreds" File: C:/Users/mas1850/hdl/hdl/lab5/src/calculator2.vhd Line: 232
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 146 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 25 output pins
-    Info (21061): Implemented 110 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4902 megabytes
-    Info: Processing ended: Mon Oct 30 15:21:13 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21061): Implemented 106 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4911 megabytes
+    Info: Processing ended: Wed Nov 01 18:42:51 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 

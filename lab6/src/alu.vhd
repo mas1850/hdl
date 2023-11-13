@@ -19,10 +19,10 @@ end alu;
 
 architecture beh of alu  is
 
-signal result_temp : std_logic_vector(15 downto 0);
+  signal result_temp : std_logic_vector(15 downto 0);
 
 begin
-process(clk,reset)
+  process(clk,reset)
   begin
     if (reset = '1') then 
       result <= (others => '0');

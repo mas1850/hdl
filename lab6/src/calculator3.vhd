@@ -51,6 +51,31 @@ architecture beh of calculator3 is
       edge            : out std_logic
     );
   end component;
+
+  component alu is
+    port (
+      clk             : in  std_logic;
+      reset           : in  std_logic;
+      a               : in  std_logic_vector(7 downto 0); 
+      b               : in  std_logic_vector(7 downto 0);
+      op              : in  std_logic_vector(1 downto 0); -- 00: add, 01: sub, 10: mult, 11: div
+      result          : out std_logic_vector(7 downto 0)
+    );
+  end component;
+
+  component memory is 
+    generic (
+      addr_width : integer := 2;
+      data_width : integer := 4
+    );
+    port (
+      clk             : in  std_logic;
+      we              : in  std_logic;
+      addr            : in  std_logic_vector(addr_width - 1 downto 0);
+      din             : in  std_logic_vector(data_width - 1 downto 0);
+      dout            : out std_logic_vector(data_width - 1 downto 0)
+    );
+  end component;
   
   component double_dabble is
     port (
@@ -131,16 +156,43 @@ begin
     edge            => exe_sync
   );
 
-  --next state logic and state register
+  -- next state logic and state register
   state_reg: process(reset, clk)
   begin
     if (reset = '1') then
       pres_state <= READ_W;
-      write_en <= "0";
-      address <= "00";
     elsif(rising_edge(clk)) then
       pres_state <= next_state;
     end if;
+
+    case pres_state is
+      when READ_W =>
+        write_en <= "0";
+        address <= "00";
+        res <= alu_out;
+
+      when WRITE_W_NO_OP =>
+        if (address="00") then
+          res <= alu_out;
+        elsif (address="01") then
+          res <= directory;
+        end if;
+
+      when WRITE_W =>
+        write_en <= "1";
+        address <= "00";
+
+      when WRITE_S =>
+        write_en <= "1";
+        address <= "01"
+
+      when READ_S =>
+        write_en <= "0";
+        address <= "01";
+        res <= directory;
+
+    end case;
+
   end process; -- end state register
 
   next_state_logic: process(pres_state, btn_sync)
@@ -175,6 +227,28 @@ begin
   end process; -- end next state logic
 
   -- input assignment and math
+  logic: alu
+  port map (
+    clk           => clk,
+    reset         => reset,
+    a             => in_sync,
+    b             => directory,
+    op            => op_sync,
+    result        => alu_out,
+  );
+
+
+
+
+
+
+
+
+
+
+
+
+
   -- inputs: process(reset, clk)
   -- begin
   --   if (reset = '1') then

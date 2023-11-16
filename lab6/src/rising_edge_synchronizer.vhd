@@ -8,7 +8,7 @@ use ieee.std_logic_1164.all;
 entity rising_edge_synchronizer is 
   port (
     clk               : in std_logic;
-    reset             : in std_logic;
+    reset_n           : in std_logic;
     input             : in std_logic;
     edge              : out std_logic
   );
@@ -21,9 +21,9 @@ signal input_zz    : std_logic;
 signal input_zzz   : std_logic;
 
 begin 
-  synchronizer: process(reset,clk,input)
+  synchronizer: process(reset_n,clk,input)
     begin
-      if reset = '1' then
+      if reset_n = '0' then
         input_z     <= '1';
         input_zz    <= '1';
       elsif rising_edge(clk) then
@@ -32,9 +32,9 @@ begin
       end if;
   end process;  
 
-  rising_edge_detector: process(reset,clk,input_zz)
+  rising_edge_detector: process(reset_n,clk,input_zz)
     begin
-      if reset = '1' then
+      if reset_n = '0' then
         edge        <= '0';
         input_zzz   <= '1';
       elsif rising_edge(clk) then

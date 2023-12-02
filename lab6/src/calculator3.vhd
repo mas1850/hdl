@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
--- top level for lab 6 calculator3
--- last modified 11/6/23
+-- top level for lab6 calculator3
+-- last modified 11/20/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -102,17 +102,17 @@ architecture beh of calculator3 is
   signal alu_out      : std_logic_vector(7 downto 0);
   signal write_en     : std_logic;
   signal address      : std_logic_vector(1 downto 0);
-  signal directory    : std_logic_vector(7 downto 0);
+  signal directory    : std_logic_vector(7 downto 0) ;
 
-  signal res          : std_logic_vector(7 downto 0);
+  signal res          : std_logic_vector(7 downto 0) := "00000000";
   signal res_padded   : std_logic_vector(11 downto 0);
   signal bin_hund     : std_logic_vector(3 downto 0);
   signal bin_tens     : std_logic_vector(3 downto 0);
   signal bin_ones     : std_logic_vector(3 downto 0);
 
   type calc_state     is (READ_W, WRITE_W_NO_OP, WRITE_W, WRITE_S, READ_S);
-  signal pres_state   :  calc_state;
-  signal next_state   :  calc_state;
+  signal pres_state   : calc_state;
+  signal next_state   : calc_state;
 
 begin
 
@@ -162,8 +162,8 @@ begin
  port map (
    clk           => clk,
    reset_n       => reset_n,
-   a             => in_sync,
-   b             => directory,
+   a             => directory,
+   b             => in_sync,
    op            => op_sync,
    result        => alu_out
  );
@@ -182,19 +182,18 @@ begin
         when READ_W =>
           write_en <= '0';
           address <= "00";
-          res <= alu_out;
 
-        when WRITE_W_NO_OP =>
+        when WRITE_W_NO_OP =>        
+          write_en <= '1';
+          address <= "00";
+
+        when WRITE_W =>
           if (address="00") then
             res <= alu_out;
           elsif (address="01") then
             res <= directory;
           end if;
-
-        when WRITE_W =>
-          write_en <= '1';
-          address <= "00";
-
+              
         when WRITE_S =>
           write_en <= '1';
           address <= "01";

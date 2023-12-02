@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
--- lab5 calculator3 test bench
--- last modified 11/15/23
+-- lab6 calculator3 test bench
+-- last modified 11/20/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -86,7 +86,7 @@ begin
     -- load memory
     -- divide by two
 
-    -- add four
+    -- add four -- 4
     in_switches <= "00000100";
     op_switches <= "00";
     wait for 40 ns;
@@ -95,7 +95,7 @@ begin
     exe_btn <= '0';
     wait for 40 ns;
 
-    -- multiply by eight
+    -- multiply by eight -- 32
     in_switches <= "00001000";
     op_switches <= "10";
     wait for 40 ns;
@@ -104,13 +104,13 @@ begin
     exe_btn <= '0';
     wait for 40 ns;
 
-    -- save data
+    -- save data -- 32
     ms_btn <= '1';
-    wait for 40 ms;
+    wait for 40 ns;
     ms_btn <= '0';
-    wait for 40 ms;
+    wait for 40 ns;
 
-    -- subtract eight
+    -- subtract eight -- 24
     in_switches <= "00001000";
     op_switches <= "01";
     wait for 40 ns;
@@ -119,7 +119,7 @@ begin
     exe_btn <= '0';
     wait for 40 ns;
 
-    -- divide by two
+    -- divide by two -- 12
     in_switches <= "00000010";
     op_switches <= "11";
     wait for 40 ns;
@@ -128,13 +128,13 @@ begin
     exe_btn <= '0';
     wait for 40 ns;
 
-    -- load memory
+    -- load memory -- 32
     mr_btn <= '1';
-    wait for 40 ms;
+    wait for 40 ns;
     mr_btn <= '0';
-    wait for 40 ms;
+    wait for 40 ns;
 
-    -- divide by two
+    -- divide by two -- 16
     in_switches <= "00000010";
     op_switches <= "11";
     wait for 40 ns;

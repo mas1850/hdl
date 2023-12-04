@@ -22,6 +22,22 @@ end processor;
 
 architecture beh of processor is
 
+  component calculator3 is
+    port (
+      in_switches       : in  std_logic_vector(7 downto 0);
+      op_switches       : in  std_logic_vector(1 downto 0);
+      ms_btn            : in  std_logic;
+      mr_btn            : in  std_logic;
+      exe_btn           : in  std_logic;
+      clk               : in  std_logic; 
+      reset_n           : in  std_logic;
+      state_led         : out std_logic_vector(4 downto 0);
+      ssd_hund          : out std_logic_vector(6 downto 0);
+      ssd_tens          : out std_logic_vector(6 downto 0);
+      ssd_ones          : out std_logic_vector(6 downto 0)
+    );
+  end component;
+
   signal execute_sync     : std_logic;
   signal instruction      : std_logic_vector(12 downto 0);
 
@@ -33,9 +49,34 @@ architecture beh of processor is
 
 begin
 
+  -- sync top-level execute button
+  sync_exe: rising_edge_synchronizer
+  port map(
+    clk             => clk,
+    reset_n         => reset_n,
+    input           => exe_btn,
+    edge            => exe_sync
+  );
 
+  -- instruction rom
 
+  -- instruction breaker
 
+  -- calculator component
+  calculator: calculator3
+  port map(
+    in_switches       => in_switches,
+    op_switches       => op_switches,
+    ms_btn            => ms_btn,
+    mr_btn            => mr_btn,
+    exe_btn           => exe_btn,
+    clk               => clk,
+    reset_n           => reset_n,
+    state_led         => open,
+    ssd_hund          => open,
+    ssd_tens          => open,
+    ssd_ones          => open
+  );
 
 
 

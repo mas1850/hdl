@@ -75,6 +75,14 @@ package mas_components is
       dout            : out std_logic_vector(data_width - 1 downto 0)
     );
   end component;
+
+  component blink_rom
+    PORT(
+      address         : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+      clock           : IN STD_LOGIC  := '1';
+      q               : OUT STD_LOGIC_VECTOR (12 DOWNTO 0)
+    );
+  end component;
   
   component double_dabble is
     port (

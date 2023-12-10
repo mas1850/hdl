@@ -28,33 +28,21 @@ radix define States {
     -default default
 }
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -radix decimal /calculator3_tb/uut/in_switches
-add wave -noupdate -radix binary /calculator3_tb/uut/op_switches
-add wave -noupdate /calculator3_tb/uut/ms_btn
-add wave -noupdate /calculator3_tb/uut/mr_btn
-add wave -noupdate /calculator3_tb/uut/exe_btn
-add wave -noupdate /calculator3_tb/uut/clk
-add wave -noupdate /calculator3_tb/uut/reset_n
-add wave -noupdate /calculator3_tb/uut/in_sync
-add wave -noupdate /calculator3_tb/uut/op_sync
-add wave -noupdate /calculator3_tb/uut/ms_sync
-add wave -noupdate /calculator3_tb/uut/mr_sync
-add wave -noupdate /calculator3_tb/uut/exe_sync
-add wave -noupdate /calculator3_tb/uut/write_en
-add wave -noupdate -radix binary /calculator3_tb/uut/address
-add wave -noupdate /calculator3_tb/uut/pres_state
-add wave -noupdate -radix States /calculator3_tb/uut/state_led
-add wave -noupdate /calculator3_tb/uut/next_state
-add wave -noupdate -radix unsigned /calculator3_tb/uut/directory
-add wave -noupdate -radix unsigned /calculator3_tb/uut/alu_out
-add wave -noupdate -radix unsigned /calculator3_tb/uut/res
-add wave -noupdate -radix unsigned /calculator3_tb/uut/res_padded
-add wave -noupdate -radix unsigned /calculator3_tb/uut/bin_hund
-add wave -noupdate -radix unsigned /calculator3_tb/uut/bin_tens
-add wave -noupdate -radix unsigned /calculator3_tb/uut/bin_ones
-add wave -noupdate -radix SevenSeg /calculator3_tb/uut/ssd_hund
-add wave -noupdate -radix SevenSeg /calculator3_tb/uut/ssd_tens
-add wave -noupdate -radix SevenSeg /calculator3_tb/uut/ssd_ones
+add wave -noupdate /processor_tb/execute_btn
+add wave -noupdate /processor_tb/reset_n
+add wave -noupdate /processor_tb/clk
+add wave -noupdate /processor_tb/uut/state_led
+add wave -noupdate /processor_tb/uut/ssd_hund
+add wave -noupdate /processor_tb/uut/ssd_tens
+add wave -noupdate /processor_tb/uut/ssd_ones
+add wave -noupdate /processor_tb/uut/execute_sync
+add wave -noupdate /processor_tb/uut/address_sig
+add wave -noupdate /processor_tb/uut/instruction
+add wave -noupdate /processor_tb/uut/in_switches
+add wave -noupdate /processor_tb/uut/op_switches
+add wave -noupdate /processor_tb/uut/exe_btn
+add wave -noupdate /processor_tb/uut/mr_btn
+add wave -noupdate /processor_tb/uut/ms_btn
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {121 ns} 0}
 quietly wave cursor active 1
@@ -72,4 +60,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ns} {364 ns}
+WaveRestoreZoom {655 ns} {1019 ns}

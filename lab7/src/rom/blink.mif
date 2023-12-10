@@ -1,0 +1,38 @@
+DEPTH = 8; % Memory depth and width are required. DEPTH is the number of addresses %
+WIDTH = 13; % WIDTH is the number of bits of data per word %
+% DEPTH and WIDTH should be entered as decimal numbers %
+ADDRESS_RADIX = DEC; % Address and value radixes are required %
+DATA_RADIX    = HEX; % Enter BIN, DEC, HEX, OCT, or UNS; unless %
+ % otherwise specified, radixes = HEX %
+-- Specify values for addresses, which can be single address or range
+CONTENT
+BEGIN
+0   : 0010000000100;   
+1   : 1010000001000;   
+2   : 0001000000000;   
+3   : 0110000001000;   
+4   : 1110000000010;   
+5   : 0000100000000;   
+6   : 1110000000010;   
+7   : 0000000000000;   
+END;
+
+-- change mif file stuff
+    -- put the 13 bit instructions here
+    -- decrease the depth / shorted addr bits
+
+-- test bench order of operations
+    -- add four
+    -- multiply by eight
+    -- save data
+    -- subtract eight
+    -- divide by two
+    -- load memory
+    -- divide by two
+
+-- 13 bit instruction
+    -- XX operation
+    -- X  exe
+    -- X  mem_save
+    -- X  mem_read
+    -- XXXXXXXX input

@@ -1,0 +1,102 @@
+m255
+K4
+z2
+!s11e vcom 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/ravvenLabs/websiteLinks/hdl/memory/sim/script
+T_opt
+Z1 !s110 1698244264
+VXIBL`4zW@]2PIOCl7L;S>2
+04 9 3 work memory_tb beh 1
+=1-a87eeaa8187b-653926a8-1ea-4bf4
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2019.2;69
+Ememory
+Z2 w1476235381
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z6 8../../src/memory.vhd
+Z7 F../../src/memory.vhd
+l0
+L9
+VAPZk@V8U=cYhMD??zlP7[0
+!s100 NeWb[N5ARR?JDfz@```G?3
+Z8 OL;C;2019.2;69
+31
+R1
+!i10b 1
+Z9 !s108 1698244263.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|../../src/memory.vhd|
+Z11 !s107 ../../src/memory.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R3
+R4
+R5
+DEx4 work 6 memory 0 22 APZk@V8U=cYhMD??zlP7[0
+l26
+L21
+VLKo4zSa>39@galUVKS>I>2
+!s100 2dXD[Ri1k1_[8z2YL:M^i2
+R8
+31
+R1
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ememory_tb
+Z14 w1476235447
+R3
+R4
+R5
+R0
+Z15 8../src/memory_tb.vhd
+Z16 F../src/memory_tb.vhd
+l0
+L9
+V<b@zJ[0k8mc><Q1__DCbB1
+!s100 Wlf5@ic8AJ13<OBO25M?c1
+R8
+31
+R1
+!i10b 1
+Z17 !s108 1698244264.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|../src/memory_tb.vhd|
+Z19 !s107 ../src/memory_tb.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+R5
+DEx4 work 9 memory_tb 0 22 <b@zJ[0k8mc><Q1__DCbB1
+l47
+L12
+V>lR[RW9hc_MQF<MH]EoIn1
+!s100 cz04OHbS;ISXKCR;kzlHf1
+R8
+31
+R1
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R12
+R13

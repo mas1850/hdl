@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
--- top level for lab 6 calculator3
--- last modified 11/6/23
+-- top level for lab6 calculator3
+-- last modified 11/20/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -15,7 +15,7 @@ entity calculator3 is
     mr_btn            : in  std_logic;
     exe_btn           : in  std_logic;
     clk               : in  std_logic; 
-    reset             : in  std_logic;
+    reset_n           : in  std_logic;
     state_led         : out std_logic_vector(4 downto 0);
     ssd_hund          : out std_logic_vector(6 downto 0);
     ssd_tens          : out std_logic_vector(6 downto 0);
@@ -28,7 +28,7 @@ architecture beh of calculator3 is
   component synchronizer_8bit is 
     port (
       clk             : in  std_logic;
-      reset           : in  std_logic;
+      reset_n         : in  std_logic;
       async_in        : in  std_logic_vector(7 downto 0);
       sync_out        : out std_logic_vector(7 downto 0)
     );
@@ -37,7 +37,7 @@ architecture beh of calculator3 is
   component synchronizer_2bit is 
     port (
       clk             : in  std_logic;
-      reset           : in  std_logic;
+      reset_n         : in  std_logic;
       async_in        : in  std_logic_vector(1 downto 0);
       sync_out        : out std_logic_vector(1 downto 0)
     );
@@ -46,7 +46,7 @@ architecture beh of calculator3 is
   component rising_edge_synchronizer is 
     port (
       clk             : in  std_logic;
-      reset           : in  std_logic;
+      reset_n         : in  std_logic;
       input           : in  std_logic;
       edge            : out std_logic
     );
@@ -55,7 +55,7 @@ architecture beh of calculator3 is
   component alu is
     port (
       clk             : in  std_logic;
-      reset           : in  std_logic;
+      reset_n         : in  std_logic;
       a               : in  std_logic_vector(7 downto 0); 
       b               : in  std_logic_vector(7 downto 0);
       op              : in  std_logic_vector(1 downto 0); -- 00: add, 01: sub, 10: mult, 11: div
@@ -94,24 +94,25 @@ architecture beh of calculator3 is
   end component;  
 
   signal in_sync      : std_logic_vector(7 downto 0);
+  signal op_sync      : std_logic_vector(1 downto 0);
   signal ms_sync      : std_logic;
   signal mr_sync      : std_logic;
   signal exe_sync     : std_logic;
 
   signal alu_out      : std_logic_vector(7 downto 0);
-  signal write_en     : std_logic_vector;
+  signal write_en     : std_logic;
   signal address      : std_logic_vector(1 downto 0);
-  signal directory    : std_logic_vector(7 downto 0);
+  signal directory    : std_logic_vector(7 downto 0) ;
 
-  signal res          : std_logic_vector(8 downto 0);
+  signal res          : std_logic_vector(7 downto 0) := "00000000";
   signal res_padded   : std_logic_vector(11 downto 0);
   signal bin_hund     : std_logic_vector(3 downto 0);
   signal bin_tens     : std_logic_vector(3 downto 0);
   signal bin_ones     : std_logic_vector(3 downto 0);
 
   type calc_state     is (READ_W, WRITE_W_NO_OP, WRITE_W, WRITE_S, READ_S);
-  signal pres_state   :  calc_state;
-  signal next_state   :  calc_state;
+  signal pres_state   : calc_state;
+  signal next_state   : calc_state;
 
 begin
 
@@ -119,7 +120,7 @@ begin
   sync_input: synchronizer_8bit
   port map(
     clk             => clk,
-    reset           => reset,
+    reset_n         => reset_n,
     async_in        => in_switches,
     sync_out        => in_sync
   );
@@ -127,7 +128,7 @@ begin
   sync_op: synchronizer_2bit
   port map(
     clk             => clk,
-    reset           => reset,
+    reset_n         => reset_n,
     async_in        => op_switches,
     sync_out        => op_sync
   );
@@ -135,7 +136,7 @@ begin
   sync_ms: rising_edge_synchronizer
   port map(
     clk             => clk,
-    reset           => reset,
+    reset_n         => reset_n,
     input           => ms_btn,
     edge            => ms_sync
   );
@@ -143,7 +144,7 @@ begin
   sync_mr: rising_edge_synchronizer
   port map(
     clk             => clk,
-    reset           => reset,
+    reset_n         => reset_n,
     input           => mr_btn,
     edge            => mr_sync
   );
@@ -151,62 +152,73 @@ begin
   sync_exe: rising_edge_synchronizer
   port map(
     clk             => clk,
-    reset           => reset,
+    reset_n         => reset_n,
     input           => exe_btn,
     edge            => exe_sync
   );
 
+ -- arithmetic logic unit
+ logic_unit: alu
+ port map (
+   clk           => clk,
+   reset_n       => reset_n,
+   a             => directory,
+   b             => in_sync,
+   op            => op_sync,
+   result        => alu_out
+ );
+
   -- next state logic and state register
-  state_reg: process(reset, clk)
+  state_reg: process(reset_n, clk)
   begin
-    if (reset = '1') then
+    if (reset_n = '0') then
       pres_state <= READ_W;
     elsif(rising_edge(clk)) then
       pres_state <= next_state;
     end if;
 
-    case pres_state is
-      when READ_W =>
-        write_en <= "0";
-        address <= "00";
-        res <= alu_out;
+    if(rising_edge(clk)) then
+      case pres_state is
+        when READ_W =>
+          write_en <= '0';
+          address <= "00";
 
-      when WRITE_W_NO_OP =>
-        if (address="00") then
-          res <= alu_out;
-        elsif (address="01") then
+        when WRITE_W_NO_OP =>        
+          write_en <= '1';
+          address <= "00";
+
+        when WRITE_W =>
+          if (address="00") then
+            res <= alu_out;
+          elsif (address="01") then
+            res <= directory;
+          end if;
+              
+        when WRITE_S =>
+          write_en <= '1';
+          address <= "01";
+
+        when READ_S =>
+          write_en <= '0';
+          address <= "01";
           res <= directory;
-        end if;
 
-      when WRITE_W =>
-        write_en <= "1";
-        address <= "00";
-
-      when WRITE_S =>
-        write_en <= "1";
-        address <= "01"
-
-      when READ_S =>
-        write_en <= "0";
-        address <= "01";
-        res <= directory;
-
-    end case;
-
+      end case;
+    end if;
   end process; -- end state register
 
-  next_state_logic: process(pres_state, btn_sync)
+  next_state_logic: process(pres_state, exe_sync, ms_sync, mr_sync)
   begin
     next_state <= pres_state;
     case pres_state is
       when READ_W =>
-        if (exe_sync = "1") then
+        if (exe_sync = '1') then
           next_state <= WRITE_W_NO_OP;
         end if;
-        if (ms_sync = "1") then
+        if (ms_sync = '1') then
           next_state <= WRITE_S;
         end if;
-        if (mr_sync = "1") then
+        if (mr_sync = '1') then
           next_state <= READ_S;
         end if;
 
@@ -220,90 +232,50 @@ begin
         next_state <= READ_W;
       
       when READ_S =>
-        if (exe_sync = "1") then
+        if (exe_sync = '1') then
           next_state <= WRITE_W_NO_OP;
         end if;
     end case;
   end process; -- end next state logic
 
-  -- input assignment and math
-  logic: alu
+  -- memory and state led
+  ram: memory
+  generic map (
+    addr_width      => 2,
+    data_width      => 8     
+  )
   port map (
-    clk           => clk,
-    reset         => reset,
-    a             => in_sync,
-    b             => directory,
-    op            => op_sync,
-    result        => alu_out,
+    clk             => clk,
+    we              => write_en,
+    addr            => address,
+    din             => res,
+    dout            => directory      
   );
 
+  state_display: process(pres_state)
+  begin
+    case pres_state is
+      when READ_W =>
+        state_led <= "10000";
 
+      when WRITE_W_NO_OP =>
+        state_led <= "01000";
+      
+      when WRITE_W =>
+        state_led <= "00100";
+      
+      when WRITE_S =>
+        state_led <= "00010";
+      
+      when READ_S =>
+        state_led <= "00001";
 
-
-
-
-
-
-
-
-
-
-
-  -- inputs: process(reset, clk)
-  -- begin
-  --   if (reset = '1') then
-  --     in_a <= "00000000";
-  --     in_b <= "00000000";
-  --   elsif ((pres_state = INPUT_A) and rising_edge(clk)) then
-  --     in_a <= in_sync;
-  --   elsif ((pres_state = INPUT_B) and rising_edge(clk)) then
-  --     in_b <= in_sync;
-  --   end if;
-  -- end process; -- end input assignment
-
---   operation: process(clk, pres_state)
---   begin
---     if(rising_edge(clk)) then
---       case pres_state is
---         when INPUT_A =>
---           res <= '0' & in_a;
---           --state_led <= "1000";
---         when INPUT_B =>
---           res <= '0' & in_b;
---           --state_led <= "0100";
---         when SUM =>
---           res <= std_logic_vector(unsigned('0' & in_a) + unsigned('0' & in_b));
---           --state_led <= "0010";
---         when DIFF =>
---           res <= std_logic_vector(unsigned('0' & in_a) - unsigned('0' & in_b));
---           --state_led <= "0001";
---       end case;
---     end if;
---   end process; -- end operations
-  
---   state_display: process(clk, pres_state)
---   begin
---     if(rising_edge(clk)) then
---       case pres_state is
---         when INPUT_A =>
---           --res <= '0' & in_a;
---           state_led <= "1000";
---         when INPUT_B =>
---           --res <= '0' & in_b;
---           state_led <= "0100";
---         when SUM =>
---           --res <= std_logic_vector(unsigned('0' & in_a) + unsigned('0' & in_b));
---           state_led <= "0010";
---         when DIFF =>
---           --res <= std_logic_vector(unsigned('0' & in_a) - unsigned('0' & in_b));
---           state_led <= "0001";
---       end case;
---     end if;
---   end process; -- end state_display
+    end case;
+  end process; -- end next state logic
 
   pad: process(res)
   begin
-    res_padded <= "000" & res;
+    res_padded <= "0000" & res;
   end process; -- end result padding
 
   -- double double and seven segment display

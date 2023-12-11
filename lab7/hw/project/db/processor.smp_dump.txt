@@ -1,0 +1,8 @@
+
+State Machine - |processor|calculator3:calculator|pres_state
+Name pres_state.READ_S pres_state.WRITE_S pres_state.WRITE_W pres_state.WRITE_W_NO_OP pres_state.READ_W 
+pres_state.READ_W 0 0 0 0 0 
+pres_state.WRITE_W_NO_OP 0 0 0 1 1 
+pres_state.WRITE_W 0 0 1 0 1 
+pres_state.WRITE_S 0 1 0 0 1 
+pres_state.READ_S 1 0 0 0 1 

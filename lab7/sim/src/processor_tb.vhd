@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
--- lab6 calculator3 test bench
--- last modified 11/20/23
+-- lab7 processor test bench
+-- last modified 12/11/23
 -------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -77,7 +77,17 @@ begin
     execute_btn <= '0';
     wait for 40 ns;
 
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
     execute_btn <= '1'; -- multiply by eight
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
     wait for 40 ns;
     execute_btn <= '0';
     wait for 40 ns;
@@ -87,12 +97,27 @@ begin
     execute_btn <= '0';
     wait for 40 ns;
 
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
     execute_btn <= '1'; -- subtract eight
     wait for 40 ns;
     execute_btn <= '0';
     wait for 40 ns;
 
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
     execute_btn <= '1'; -- divide by two
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
     wait for 40 ns;
     execute_btn <= '0';
     wait for 40 ns;
@@ -102,7 +127,32 @@ begin
     execute_btn <= '0';
     wait for 40 ns;
 
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
     execute_btn <= '1'; -- divide by two
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
+    wait for 40 ns;
+    execute_btn <= '0';
+    wait for 40 ns;
+
+    execute_btn <= '1'; -- filler
     wait for 40 ns;
     execute_btn <= '0';
     wait for 40 ns;

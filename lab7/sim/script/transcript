@@ -14,27 +14,7 @@
 # do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:27:24 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# ** Error: (vcom-11) Could not find work.mas_components.
-# ** Error (suppressible): ../../src/calculator3.vhd(11): (vcom-1195) Cannot find expanded name "work.mas_components".
-# ** Error: ../../src/calculator3.vhd(11): Unknown expanded name.
-# ** Note: ../../src/calculator3.vhd(13): VHDL Compiler exiting
-# End time: 16:27:24 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/Software/ModelSim/win64/vcom failed.
-# Error in macro ./sim.do line 2
-# C:/Software/ModelSim/win64/vcom failed.
-#     while executing
-# "vcom -93 -work work ../../src/calculator3.vhd"
-do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:29:07 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,71 +22,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator3
 # -- Compiling architecture beh of calculator3
-# ** Error (suppressible): ../../src/calculator3.vhd(52): (vcom-1141) Identifier "synchronizer_8bit" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(60): (vcom-1141) Identifier "synchronizer_2bit" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(68): (vcom-1141) Identifier "rising_edge_synchronizer" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(76): (vcom-1141) Identifier "rising_edge_synchronizer" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(84): (vcom-1141) Identifier "rising_edge_synchronizer" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(93): (vcom-1141) Identifier "alu" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(174): (vcom-1141) Identifier "memory" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(214): (vcom-1141) Identifier "double_dabble" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(222): (vcom-1141) Identifier "seven_seg" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(228): (vcom-1141) Identifier "seven_seg" does not identify a component declaration.
-# ** Error (suppressible): ../../src/calculator3.vhd(234): (vcom-1141) Identifier "seven_seg" does not identify a component declaration.
-# ** Note: ../../src/calculator3.vhd(240): VHDL Compiler exiting
-# End time: 16:29:07 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-# ** Error: C:/Software/ModelSim/win64/vcom failed.
-# Error in macro ./sim.do line 2
-# C:/Software/ModelSim/win64/vcom failed.
-#     while executing
-# "vcom -93 -work work ../../src/calculator3.vhd"
-do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:30:17 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity calculator3
-# -- Compiling architecture beh of calculator3
-# End time: 16:30:17 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:30:17 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# ** Error: (vcom-11) Could not find work.mas_components.
-# ** Error (suppressible): ../../src/processor.vhd(11): (vcom-1195) Cannot find expanded name "work.mas_components".
-# ** Error: ../../src/processor.vhd(11): Unknown expanded name.
-# ** Note: ../../src/processor.vhd(13): VHDL Compiler exiting
-# End time: 16:30:17 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: C:/Software/ModelSim/win64/vcom failed.
-# Error in macro ./sim.do line 3
-# C:/Software/ModelSim/win64/vcom failed.
-#     while executing
-# "vcom -93 -work work ../../src/processor.vhd"
-do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:34:37 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity calculator3
-# -- Compiling architecture beh of calculator3
-# End time: 16:34:37 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:34:37 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -114,55 +33,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity processor
 # -- Compiling architecture beh of processor
-# ** Error: ../../src/processor.vhd(61): Object alias must refer to a variable, signal, constant, or file.
-# ** Error: ../../src/processor.vhd(61): (vcom-1136) Unknown identifier "instuction".
-# ** Error: ../../src/processor.vhd(62): Object alias must refer to a variable, signal, constant, or file.
-# ** Error: ../../src/processor.vhd(62): (vcom-1136) Unknown identifier "instuction".
-# ** Error: ../../src/processor.vhd(63): Object alias must refer to a variable, signal, constant, or file.
-# ** Error: ../../src/processor.vhd(63): (vcom-1136) Unknown identifier "instuction".
-# ** Error: ../../src/processor.vhd(64): Object alias must refer to a variable, signal, constant, or file.
-# ** Error: ../../src/processor.vhd(64): (vcom-1136) Unknown identifier "instuction".
-# ** Error: ../../src/processor.vhd(65): Object alias must refer to a variable, signal, constant, or file.
-# ** Error: ../../src/processor.vhd(65): (vcom-1136) Unknown identifier "instuction".
-# ** Error: ../../src/processor.vhd(101): (vcom-1136) Unknown identifier "in_switches".
-# ** Error: ../../src/processor.vhd(102): (vcom-1136) Unknown identifier "op_switches".
-# ** Error: ../../src/processor.vhd(103): (vcom-1136) Unknown identifier "ms_btn".
-# ** Error: ../../src/processor.vhd(104): (vcom-1136) Unknown identifier "mr_btn".
-# ** Error: ../../src/processor.vhd(105): (vcom-1136) Unknown identifier "exe_btn".
-# ** Note: ../../src/processor.vhd(114): VHDL Compiler exiting
-# End time: 16:34:37 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 15, Warnings: 0
-# ** Error: C:/Software/ModelSim/win64/vcom failed.
-# Error in macro ./sim.do line 3
-# C:/Software/ModelSim/win64/vcom failed.
-#     while executing
-# "vcom -93 -work work ../../src/processor.vhd"
-do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:29 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity calculator3
-# -- Compiling architecture beh of calculator3
-# End time: 16:37:29 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:29 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity processor
-# -- Compiling architecture beh of processor
-# End time: 16:37:29 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:29 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -171,60 +45,60 @@ do sim.do
 # -- Loading package MATH_REAL
 # -- Compiling entity processor_tb
 # -- Compiling architecture beh of processor_tb
-# End time: 16:37:29 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:29 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/mas_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package mas_components
-# End time: 16:37:29 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:29 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:01
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_8bit
 # -- Compiling architecture beh of synchronizer_8bit
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_2bit
 # -- Compiling architecture beh of synchronizer_2bit
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:55 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -232,10 +106,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture beh of alu
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:55 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:56 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -243,10 +117,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:56 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:56 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -254,10 +128,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture beh of memory
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:56 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:37:30 on Dec 10,2023
+# Start time: 14:34:56 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -265,147 +139,10 @@ do sim.do
 # -- Loading package altera_mf_components
 # -- Compiling entity blink_rom
 # -- Compiling architecture SYN of blink_rom
-# ** Error (suppressible): ../../src/rom/blink_rom.vhd(57): (vcom-1272) Length of expected is 13; length of slice name is 4.
-# ** Note: ../../src/rom/blink_rom.vhd(85): VHDL Compiler exiting
-# End time: 16:37:30 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/Software/ModelSim/win64/vcom failed.
-# Error in macro ./sim.do line 13
-# C:/Software/ModelSim/win64/vcom failed.
-#     while executing
-# "vcom -93 -work work ../../src/rom/blink_rom.vhd"
-do sim.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity calculator3
-# -- Compiling architecture beh of calculator3
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity processor
-# -- Compiling architecture beh of processor
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MATH_REAL
-# -- Compiling entity processor_tb
-# -- Compiling architecture beh of processor_tb
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/mas_components.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package mas_components
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity rising_edge_synchronizer
-# -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity seven_seg
-# -- Compiling architecture beh of seven_seg
-# End time: 16:38:51 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:51 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity synchronizer_8bit
-# -- Compiling architecture beh of synchronizer_8bit
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:52 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity synchronizer_2bit
-# -- Compiling architecture beh of synchronizer_2bit
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:52 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity alu
-# -- Compiling architecture beh of alu
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:52 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity double_dabble
-# -- Compiling architecture beh of double_dabble
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:52 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity memory
-# -- Compiling architecture beh of memory
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:38:52 on Dec 10,2023
-# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package altera_mf_components
-# -- Compiling entity blink_rom
-# -- Compiling architecture SYN of blink_rom
-# End time: 16:38:52 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:34:56 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" processor_tb 
-# Start time: 16:38:52 on Dec 10,2023
+# Start time: 14:34:56 on Dec 11,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "calculator3(beh)".
 # Loading std.standard
@@ -423,17 +160,76 @@ do sim.do
 # Loading altera_mf.altera_common_conversion(body)
 # Loading altera_mf.altera_device_families(body)
 # Loading altera_mf.altsyncram(translated)#1
-# ** Fatal: (vsim-3348) Port length (5) does not match actual length (3) for port "/processor_tb/uut/rom_inst/altsyncram_component/address_a".
-#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/rom_inst/altsyncram_component File: c:/intelfpga/17.0/quartus/eda/sim_lib/altera_mf.vhd Line: 39939
-# FATAL ERROR while loading design
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./sim.do PAUSED at line 14
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftkgwvc5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkgwvc5
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
 do sim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:29 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -441,10 +237,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity calculator3
 # -- Compiling architecture beh of calculator3
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:01
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -452,10 +248,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity processor
 # -- Compiling architecture beh of processor
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -464,60 +260,60 @@ do sim.do
 # -- Loading package MATH_REAL
 # -- Compiling entity processor_tb
 # -- Compiling architecture beh of processor_tb
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/mas_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package mas_components
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity rising_edge_synchronizer
 # -- Compiling architecture beh of rising_edge_synchronizer
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture beh of seven_seg
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_8bit
 # -- Compiling architecture beh of synchronizer_8bit
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity synchronizer_2bit
 # -- Compiling architecture beh of synchronizer_2bit
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -525,10 +321,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity alu
 # -- Compiling architecture beh of alu
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:57 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -536,10 +332,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity double_dabble
 # -- Compiling architecture beh of double_dabble
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:57 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:58 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -547,10 +343,10 @@ do sim.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture beh of memory
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:58 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 16:43:30 on Dec 10,2023
+# Start time: 14:55:58 on Dec 11,2023
 # vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -558,10 +354,12 @@ do sim.do
 # -- Loading package altera_mf_components
 # -- Compiling entity blink_rom
 # -- Compiling architecture SYN of blink_rom
-# End time: 16:43:30 on Dec 10,2023, Elapsed time: 0:00:00
+# End time: 14:55:58 on Dec 11,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 14:55:58 on Dec 11,2023, Elapsed time: 0:21:02
+# Errors: 28, Warnings: 24
 # vsim -voptargs="+acc" processor_tb 
-# Start time: 16:38:52 on Dec 10,2023
+# Start time: 14:55:58 on Dec 11,2023
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
@@ -593,63 +391,9 @@ do sim.do
 # 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
-#           Attempting to use alternate WLF file "./wlftx2wjnv".
+#           Attempting to use alternate WLF file "./wlftjigmgk".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftx2wjnv
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/in_switches'.
-# Executing ONERROR command at macro ./wave.do line 31
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/op_switches'.
-# Executing ONERROR command at macro ./wave.do line 32
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/ms_btn'.
-# Executing ONERROR command at macro ./wave.do line 33
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/mr_btn'.
-# Executing ONERROR command at macro ./wave.do line 34
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/exe_btn'.
-# Executing ONERROR command at macro ./wave.do line 35
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/clk'.
-# Executing ONERROR command at macro ./wave.do line 36
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/reset_n'.
-# Executing ONERROR command at macro ./wave.do line 37
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/in_sync'.
-# Executing ONERROR command at macro ./wave.do line 38
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/op_sync'.
-# Executing ONERROR command at macro ./wave.do line 39
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/ms_sync'.
-# Executing ONERROR command at macro ./wave.do line 40
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/mr_sync'.
-# Executing ONERROR command at macro ./wave.do line 41
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/exe_sync'.
-# Executing ONERROR command at macro ./wave.do line 42
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/write_en'.
-# Executing ONERROR command at macro ./wave.do line 43
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/address'.
-# Executing ONERROR command at macro ./wave.do line 44
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/pres_state'.
-# Executing ONERROR command at macro ./wave.do line 45
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/state_led'.
-# Executing ONERROR command at macro ./wave.do line 46
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/next_state'.
-# Executing ONERROR command at macro ./wave.do line 47
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/directory'.
-# Executing ONERROR command at macro ./wave.do line 48
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/alu_out'.
-# Executing ONERROR command at macro ./wave.do line 49
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/res'.
-# Executing ONERROR command at macro ./wave.do line 50
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/res_padded'.
-# Executing ONERROR command at macro ./wave.do line 51
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/bin_hund'.
-# Executing ONERROR command at macro ./wave.do line 52
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/bin_tens'.
-# Executing ONERROR command at macro ./wave.do line 53
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/bin_ones'.
-# Executing ONERROR command at macro ./wave.do line 54
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/ssd_hund'.
-# Executing ONERROR command at macro ./wave.do line 55
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/ssd_tens'.
-# Executing ONERROR command at macro ./wave.do line 56
-# ** Error: (vish-4014) No objects found matching '/calculator3_tb/uut/ssd_ones'.
-# Executing ONERROR command at macro ./wave.do line 57
+#           Using alternate file: ./wlftjigmgk
 # ** Note: ********** sequential testbench start **********
 #    Time: 0 ns  Iteration: 0  Instance: /processor_tb
 # ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
@@ -699,26 +443,28 @@ do sim.do
 # ** Note: ********** sequential testbench end **********
 #    Time: 660 ns  Iteration: 0  Instance: /processor_tb
 add wave -position insertpoint  \
-sim:/processor_tb/execute_btn \
-sim:/processor_tb/reset_n \
-sim:/processor_tb/clk
+sim:/processor_tb/uut/calculator/in_sync \
+sim:/processor_tb/uut/calculator/op_sync \
+sim:/processor_tb/uut/calculator/ms_sync \
+sim:/processor_tb/uut/calculator/mr_sync \
+sim:/processor_tb/uut/calculator/exe_sync
 add wave -position insertpoint  \
-sim:/processor_tb/uut/state_led \
-sim:/processor_tb/uut/ssd_hund \
-sim:/processor_tb/uut/ssd_tens \
-sim:/processor_tb/uut/ssd_ones \
-sim:/processor_tb/uut/execute_sync \
-sim:/processor_tb/uut/address_sig \
-sim:/processor_tb/uut/instruction \
-sim:/processor_tb/uut/in_switches \
-sim:/processor_tb/uut/op_switches \
-sim:/processor_tb/uut/exe_btn \
-sim:/processor_tb/uut/mr_btn \
-sim:/processor_tb/uut/ms_btn
+sim:/processor_tb/uut/calculator/address \
+sim:/processor_tb/uut/calculator/directory \
+sim:/processor_tb/uut/calculator/res \
+sim:/processor_tb/uut/calculator/res_padded \
+sim:/processor_tb/uut/calculator/pres_state \
+sim:/processor_tb/uut/calculator/next_state
+add wave -position insertpoint  \
+sim:/processor_tb/uut/calculator/alu_out \
+sim:/processor_tb/uut/calculator/write_en
+add wave -position 20  sim:/processor_tb/uut/calculator/bin_hund
+add wave -position 21  sim:/processor_tb/uut/calculator/bin_tens
+add wave -position 22  sim:/processor_tb/uut/calculator/bin_ones
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/lab7/sim/script/wave.do
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 run
 # ** Note: ********** sequential testbench start **********
 #    Time: 0 ns  Iteration: 0  Instance: /processor_tb
@@ -768,11 +514,2474 @@ run
 #    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
 # ** Note: ********** sequential testbench end **********
 #    Time: 660 ns  Iteration: 0  Instance: /processor_tb
-run
-run
-run
-run
-run
-run
-run
-run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/lab7/sim/script/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/lab7/sim/script/wave.do
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:33 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:31:33 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:33 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:31:33 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:33 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../calculator3.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../../calculator3.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 15:31:33 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Software/ModelSim/win64/vcom failed.
+# Error in macro ./sim.do line 4
+# C:/Software/ModelSim/win64/vcom failed.
+#     while executing
+# "vcom -93 -work work ../../calculator3.vhd"
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 15:31:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 15:31:52 on Dec 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:52 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 15:31:52 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:31:52 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 15:31:52 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:31:52 on Dec 11,2023, Elapsed time: 0:35:54
+# Errors: 71, Warnings: 22
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 15:31:52 on Dec 11,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlft6r0bth".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6r0bth
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:35:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:35:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 15:35:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:35:59 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 15:35:59 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:36:00 on Dec 11,2023, Elapsed time: 0:04:08
+# Errors: 40, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 15:36:00 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftcdga0g".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcdga0g
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:50 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:41:50 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:50 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:41:50 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:50 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 15:41:50 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:41:51 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 15:41:51 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:41:52 on Dec 11,2023, Elapsed time: 0:05:52
+# Errors: 67, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 15:41:52 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftghwse2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftghwse2
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+add wave -position 8  sim:/processor_tb/uut/calculator/in_switches
+add wave -position 9  sim:/processor_tb/uut/calculator/op_switches
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:54 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:48:54 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:54 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:48:55 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 15:48:55 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:48:56 on Dec 11,2023, Elapsed time: 0:07:04
+# Errors: 44, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 15:48:56 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftz6mhaf".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz6mhaf
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:57:46 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# ** Error: ../../src/processor.vhd(101): near "then": syntax error
+# End time: 15:57:46 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Software/ModelSim/win64/vcom failed.
+# Error in macro ./sim.do line 2
+# C:/Software/ModelSim/win64/vcom failed.
+#     while executing
+# "vcom -93 -work work ../../src/processor.vhd"
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 15:58:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 15:58:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:58:26 on Dec 11,2023, Elapsed time: 0:09:30
+# Errors: 53, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 15:58:26 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlft5yyb0w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5yyb0w
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:26:26 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:26:26 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:26:41 on Dec 11,2023, Elapsed time: 0:28:15
+# Errors: 38, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:26:41 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftr846he".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr846he
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/mas1850/hdl/lab7/sim/script/wave.do
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:39:39 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# ** Error (suppressible): ../../src/processor.vhd(93): (vcom-1272) Length of formal "address" is 4; length of actual is 3.
+# ** Note: ../../src/processor.vhd(114): VHDL Compiler exiting
+# End time: 16:39:39 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/Software/ModelSim/win64/vcom failed.
+# Error in macro ./sim.do line 2
+# C:/Software/ModelSim/win64/vcom failed.
+#     while executing
+# "vcom -93 -work work ../../src/processor.vhd"
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:40:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:40:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:40:11 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:11 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:40:12 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:40:12 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:40:13 on Dec 11,2023, Elapsed time: 0:13:32
+# Errors: 33, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:40:13 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftkhfnib".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkhfnib
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 660 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:57 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:42:57 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:57 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:42:57 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:42:58 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:42:58 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:42:59 on Dec 11,2023, Elapsed time: 0:02:46
+# Errors: 26, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:42:59 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftw3h51w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw3h51w
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 740 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 760 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 780 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 800 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 820 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 840 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 860 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 880 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 900 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 920 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 940 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 960 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 980 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1 us  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1020 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1040 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1060 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1080 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1100 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1120 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1140 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1160 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1180 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1200 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1220 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1240 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1260 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1280 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1300 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1320 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1340 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1360 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Note: ********** sequential testbench end **********
+#    Time: 1460 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:29 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:44:29 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:30 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:44:30 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:44:30 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:44:30 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:44:30 on Dec 11,2023, Elapsed time: 0:01:31
+# Errors: 28, Warnings: 56
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:44:30 on Dec 11,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlft1w9est".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1w9est
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 740 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 760 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 780 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 800 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 820 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 840 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 860 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 880 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 900 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 920 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 940 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 960 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 980 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1 us  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1020 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1040 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1060 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1080 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1100 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1120 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1140 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1160 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1180 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1200 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1220 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1240 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1260 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1280 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1300 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1320 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1340 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Warning: Address pointed at port A is out of bound! 
+#    Time: 1360 ns  Iteration: 2  Instance: /processor_tb/uut/rom_inst/altsyncram_component
+# ** Note: ********** sequential testbench end **********
+#    Time: 1460 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:47:44 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:47:44 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:47:45 on Dec 11,2023, Elapsed time: 0:03:15
+# Errors: 34, Warnings: 56
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:47:45 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftrfqmit".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrfqmit
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 1460 ns  Iteration: 0  Instance: /processor_tb
+do sim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:30 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity processor
+# -- Compiling architecture beh of processor
+# End time: 16:50:30 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:30 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../src/processor_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity processor_tb
+# -- Compiling architecture beh of processor_tb
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/calculator3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity calculator3
+# -- Compiling architecture beh of calculator3
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rising_edge_synchronizer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rising_edge_synchronizer
+# -- Compiling architecture beh of rising_edge_synchronizer
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture beh of seven_seg
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_8bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_8bit
+# -- Compiling architecture beh of synchronizer_8bit
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/synchronizer_2bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchronizer_2bit
+# -- Compiling architecture beh of synchronizer_2bit
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture beh of alu
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/double_dabble/src/double_dabble.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity double_dabble
+# -- Compiling architecture beh of double_dabble
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/memory/src/memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture beh of memory
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 16:50:31 on Dec 11,2023
+# vcom -reportprogress 300 -93 -work work ../../src/rom/blink_rom.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_mf_components
+# -- Compiling entity blink_rom
+# -- Compiling architecture SYN of blink_rom
+# End time: 16:50:31 on Dec 11,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:50:32 on Dec 11,2023, Elapsed time: 0:02:47
+# Errors: 26, Warnings: 24
+# vsim -voptargs="+acc" processor_tb 
+# Start time: 16:50:32 on Dec 11,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.processor_tb(beh)#1
+# Loading work.processor(beh)#1
+# Loading work.rising_edge_synchronizer(beh)#1
+# Loading altera_mf.altera_mf_components
+# Loading work.blink_rom(syn)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading work.calculator3(beh)#1
+# Loading work.synchronizer_8bit(beh)#1
+# Loading work.synchronizer_2bit(beh)#1
+# Loading work.alu(beh)#1
+# Loading work.memory(beh)#1
+# Loading work.double_dabble(beh)#1
+# Loading work.seven_seg(beh)#1
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mas1850  Hostname: GOL-1360-13  ProcessID: 16024
+#           Attempting to use alternate WLF file "./wlftz3ck5c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz3ck5c
+# ** Note: ********** sequential testbench start **********
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /processor_tb/uut/calculator/dd
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 1  Instance: /processor_tb/uut/calculator/ram
+# ** Note: ********** sequential testbench end **********
+#    Time: 1460 ns  Iteration: 0  Instance: /processor_tb

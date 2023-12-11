@@ -48,20 +48,20 @@ architecture beh of processor is
 
   component blink_rom
     PORT(
-      address         : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+      address         : IN STD_LOGIC_VECTOR (3 DOWNTO 0);
       clock           : IN STD_LOGIC  := '1';
       q               : OUT STD_LOGIC_VECTOR (12 DOWNTO 0)
     );
   end component;
 
   signal execute_sync    : std_logic;
-  signal address_sig     : std_logic_vector(2 downto 0) := "000";
+  signal address_sig     : std_logic_vector(3 downto 0) := "0000";
   signal instruction     : std_logic_vector(12 downto 0) := "0000000000000";
 
-  alias ms_btn           : std_logic IS instruction(12);
-  alias mr_btn           : std_logic IS instruction(11);
+  alias op_switches      : std_logic_vector(12 downto 11) IS instruction(12 downto 11);
   alias exe_btn          : std_logic IS instruction(10);
-  alias op_switches      : std_logic_vector(1 downto 0) IS instruction(9 downto 8);
+  alias ms_btn           : std_logic IS instruction(9);
+  alias mr_btn           : std_logic IS instruction(8);
   alias in_switches      : std_logic_vector(7 downto 0) IS instruction(7 downto 0);
 
 begin
@@ -105,10 +105,10 @@ begin
     exe_btn           => exe_btn,
     clk               => clk,
     reset_n           => reset_n,
-    state_led         => open,
-    ssd_hund          => open,
-    ssd_tens          => open,
-    ssd_ones          => open
+    state_led         => state_led,
+    ssd_hund          => ssd_hund,
+    ssd_tens          => ssd_tens,
+    ssd_ones          => ssd_ones
   );
 
 end beh;

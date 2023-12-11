@@ -28,13 +28,9 @@ radix define States {
     -default default
 }
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /processor_tb/execute_btn
-add wave -noupdate /processor_tb/reset_n
 add wave -noupdate /processor_tb/clk
-add wave -noupdate /processor_tb/uut/state_led
-add wave -noupdate /processor_tb/uut/ssd_hund
-add wave -noupdate /processor_tb/uut/ssd_tens
-add wave -noupdate /processor_tb/uut/ssd_ones
+add wave -noupdate /processor_tb/reset_n
+add wave -noupdate /processor_tb/execute_btn
 add wave -noupdate /processor_tb/uut/execute_sync
 add wave -noupdate /processor_tb/uut/address_sig
 add wave -noupdate /processor_tb/uut/instruction
@@ -43,8 +39,28 @@ add wave -noupdate /processor_tb/uut/op_switches
 add wave -noupdate /processor_tb/uut/exe_btn
 add wave -noupdate /processor_tb/uut/mr_btn
 add wave -noupdate /processor_tb/uut/ms_btn
+add wave -noupdate /processor_tb/uut/calculator/in_sync
+add wave -noupdate /processor_tb/uut/calculator/op_sync
+add wave -noupdate /processor_tb/uut/calculator/exe_sync
+add wave -noupdate /processor_tb/uut/calculator/mr_sync
+add wave -noupdate /processor_tb/uut/calculator/ms_sync
+add wave -noupdate /processor_tb/uut/calculator/write_en
+add wave -noupdate /processor_tb/uut/calculator/address
+add wave -noupdate /processor_tb/uut/state_led
+add wave -noupdate /processor_tb/uut/calculator/pres_state
+add wave -noupdate /processor_tb/uut/calculator/next_state
+add wave -noupdate -radix unsigned /processor_tb/uut/calculator/directory
+add wave -noupdate -radix unsigned /processor_tb/uut/calculator/alu_out
+add wave -noupdate -radix unsigned /processor_tb/uut/calculator/res
+add wave -noupdate -radix decimal /processor_tb/uut/calculator/res_padded
+add wave -noupdate /processor_tb/uut/calculator/bin_hund
+add wave -noupdate /processor_tb/uut/calculator/bin_tens
+add wave -noupdate /processor_tb/uut/calculator/bin_ones
+add wave -noupdate /processor_tb/uut/ssd_hund
+add wave -noupdate /processor_tb/uut/ssd_tens
+add wave -noupdate /processor_tb/uut/ssd_ones
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {121 ns} 0}
+WaveRestoreCursors {{Cursor 1} {268 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 177
 configure wave -valuecolwidth 57
@@ -60,4 +76,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {655 ns} {1019 ns}
+WaveRestoreZoom {246 ns} {610 ns}

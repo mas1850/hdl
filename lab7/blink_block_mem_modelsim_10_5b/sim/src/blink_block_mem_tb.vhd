@@ -17,11 +17,11 @@ component blink_block_mem is
   port (
     clk              : in  std_logic; 
     reset            : in  std_logic;
-    led_out          : out std_logic_vector(6 downto 0)
+    led_out          : out std_logic_vector(12 downto 0)
   );
 end component; 
 
-signal led_out        : std_logic_vector(6 downto 0);
+signal led_out        : std_logic_vector(12 downto 0);
 constant period       : time := 20ns;                                              
 signal clk            : std_logic := '0';
 signal reset          : std_logic := '1';

@@ -42,7 +42,7 @@ USE altera_mf.altera_mf_components.all;
 ENTITY blink_rom IS
 	PORT
 	(
-		address		: IN STD_LOGIC_VECTOR (2 DOWNTO 0); -- probably change the vector lengths here
+		address		: IN STD_LOGIC_VECTOR (3 DOWNTO 0); -- probably change the vector lengths here
 		clock		: IN STD_LOGIC  := '1';
 		q		: OUT STD_LOGIC_VECTOR (12 DOWNTO 0) -- and here
 	);
@@ -65,12 +65,12 @@ BEGIN
 		intended_device_family => "Cyclone V",
 		lpm_hint => "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=BLNK",
 		lpm_type => "altsyncram",
-		numwords_a => 8, -- maybe this
+		numwords_a => 16, -- maybe this
 		operation_mode => "ROM",
 		outdata_aclr_a => "NONE",
 		outdata_reg_a => "CLOCK0",
 		ram_block_type => "M10K",
-		widthad_a => 3, -- maybe this
+		widthad_a => 4, -- maybe this
 		width_a => 13, -- maybe this
 		width_byteena_a => 1
 	)

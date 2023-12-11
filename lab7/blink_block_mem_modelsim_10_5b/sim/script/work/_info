@@ -12,209 +12,238 @@ Z0 dC:/Users/mas1850/hdl/lab7/blink_block_mem_modelsim_10_5b/sim/script
 T_opt
 !s110 1702245018
 ViiEEc3mIIMg3jiSH>PzWX2
-04 18 4 work blink_block_mem_tb arch 1
+Z1 04 18 4 work blink_block_mem_tb arch 1
 =1-b07b251b0651-6576329a-8f-4e68
-o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
-OL;O;2019.2;69
+Z4 OL;O;2019.2;69
 R0
-Eblink_block_mem
-Z1 w1702240314
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-R0
-Z5 8../../src/blink_block_mem.vhd
-Z6 F../../src/blink_block_mem.vhd
-l0
-L9
-VnWZQRKmHNPaEYUBYNd]Z90
-!s100 7]8V4BTS8m6aG7Kzln`XX1
-Z7 OL;C;2019.2;69
-31
-Z8 !s110 1702245174
-!i10b 1
-Z9 !s108 1702245174.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|../../src/blink_block_mem.vhd|
-Z11 !s107 ../../src/blink_block_mem.vhd|
-!i113 0
-Z12 o-93 -work work
-Z13 tExplicit 1 CvgOpt 0
-Abeh
+T_opt1
+!s110 1702322942
+V?T=@i7=9j3ed@hjOjPZH@3
+R1
+=2-b07b251b0651-657762fe-69-cac
 R2
 R3
-R4
-DEx4 work 15 blink_block_mem 0 22 nWZQRKmHNPaEYUBYNd]Z90
-l52
-L20
-V6^DiiJF<W<07D9g`>YDQ83
-!s100 5^m8^jncnj1:eoHPc;MTN0
-R7
-31
-R8
-!i10b 1
-R9
-R10
-R11
-!i113 0
-R12
-R13
-Eblink_block_mem_tb
-R1
-R3
+n@_opt1
 R4
 R0
-Z14 8../src/blink_block_mem_tb.vhd
-Z15 F../src/blink_block_mem_tb.vhd
+T_opt2
+!s110 1702323149
+VjRKclT^eX5MDE44:i=o;^3
+R1
+=1-b07b251b0651-657763cd-279-4484
+R2
+R3
+n@_opt2
+R4
+R0
+T_opt3
+!s110 1702323224
+VS_2h7>]oDK@jjPKQzJ=hK1
+R1
+=1-b07b251b0651-65776417-33d-3b88
+R2
+R3
+n@_opt3
+R4
+Eblink_block_mem
+Z5 w1702322898
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+R0
+Z9 8../../src/blink_block_mem.vhd
+Z10 F../../src/blink_block_mem.vhd
+l0
+L9
+V0[G2YN6gon@3;bh0=IEf41
+!s100 kZWa2UJ:aN_P1GU@:EGZ81
+Z11 OL;C;2019.2;69
+31
+Z12 !s110 1702323223
+!i10b 1
+Z13 !s108 1702323223.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|../../src/blink_block_mem.vhd|
+Z15 !s107 ../../src/blink_block_mem.vhd|
+!i113 0
+Z16 o-93 -work work
+Z17 tExplicit 1 CvgOpt 0
+Abeh
+R6
+R7
+R8
+DEx4 work 15 blink_block_mem 0 22 0[G2YN6gon@3;bh0=IEf41
+l52
+L20
+VDIQJa11FmNDU]6<<jeHNl1
+!s100 >BG8c>GQ?h:kV7]E;Wm=?1
+R11
+31
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Eblink_block_mem_tb
+Z18 w1702322939
+R7
+R8
+R0
+Z19 8../src/blink_block_mem_tb.vhd
+Z20 F../src/blink_block_mem_tb.vhd
 l0
 L8
 VRPg7:FcSV>zn8U5NF0Q^n3
 !s100 7PHbKo1`CmX=KH^OnV[XW0
-R7
+R11
 31
-R8
-!i10b 1
-R9
-Z16 !s90 -reportprogress|300|-93|-work|work|../src/blink_block_mem_tb.vhd|
-Z17 !s107 ../src/blink_block_mem_tb.vhd|
-!i113 0
 R12
-R13
-Aarch
-R3
-R4
-Z18 DEx4 work 18 blink_block_mem_tb 0 22 RPg7:FcSV>zn8U5NF0Q^n3
-l30
-L11
-Z19 VU2Y>WWz?Q[S4UI46@2?i80
-Z20 !s100 0CdiiQ>fB<TZ=E;S?[P8Y2
-R7
-31
-R8
 !i10b 1
-R9
+R13
+Z21 !s90 -reportprogress|300|-93|-work|work|../src/blink_block_mem_tb.vhd|
+Z22 !s107 ../src/blink_block_mem_tb.vhd|
+!i113 0
 R16
 R17
-!i113 0
+Aarch
+R7
+R8
+DEx4 work 18 blink_block_mem_tb 0 22 RPg7:FcSV>zn8U5NF0Q^n3
+l30
+L11
+V2@6]d<LD_zH>e`Q0AbL482
+!s100 cb__Ef14KM;Y?mAjg>[5J0
+R11
+31
 R12
+!i10b 1
 R13
+R21
+R22
+!i113 0
+R16
+R17
 Eblink_rom
-R1
-Z21 DPx9 altera_mf 20 altera_mf_components 0 22 T4<z`h6BL:_nTXI;4TFDa0
-R3
-R4
+Z23 w1702322331
+Z24 DPx9 altera_mf 20 altera_mf_components 0 22 T4<z`h6BL:_nTXI;4TFDa0
+R7
+R8
 R0
-Z22 8../../src/rom/blink_rom.vhd
-Z23 F../../src/rom/blink_rom.vhd
+Z25 8../../src/rom/blink_rom.vhd
+Z26 F../../src/rom/blink_rom.vhd
 l0
 L42
-V[VX;@XLmSaNQc58?6MDSn1
-!s100 a]2=A^BQIJO;3]dXSggIf3
-R7
+VoU7:39:]m6Lc^4[C7T;lz2
+!s100 C16U>cU?IJzV[VgY>azaD2
+R11
 31
-R8
-!i10b 1
-R9
-Z24 !s90 -reportprogress|300|-93|-work|work|../../src/rom/blink_rom.vhd|
-Z25 !s107 ../../src/rom/blink_rom.vhd|
-!i113 0
 R12
+!i10b 1
 R13
+Z27 !s90 -reportprogress|300|-93|-work|work|../../src/rom/blink_rom.vhd|
+Z28 !s107 ../../src/rom/blink_rom.vhd|
+!i113 0
+R16
+R17
 Asyn
-R21
-R3
-R4
-DEx4 work 9 blink_rom 0 22 [VX;@XLmSaNQc58?6MDSn1
+R24
+R7
+R8
+DEx4 work 9 blink_rom 0 22 oU7:39:]m6Lc^4[C7T;lz2
 l56
 L52
-VMMnF<^7JVLMK95ehN[^>c2
-!s100 z>cD5_<1@h5XlPFAkdgQN3
-R7
+VlSUSEgWDS^XmL6eZXQ7l72
+!s100 GWgG8C47maXPN8?kPIb[?0
+R11
 31
-R8
-!i10b 1
-R9
-R24
-R25
-!i113 0
 R12
+!i10b 1
 R13
+R27
+R28
+!i113 0
+R16
+R17
 Egeneric_counter
-R1
-R3
-R4
+Z29 w1702240314
+R7
+R8
 R0
-Z26 8../../src/generic_counter.vhd
-Z27 F../../src/generic_counter.vhd
+Z30 8../../src/generic_counter.vhd
+Z31 F../../src/generic_counter.vhd
 l0
 L8
 V^`<KMAE]`_5EGCAHV]bZ72
 !s100 b;7GBWdQ5cL8<UCk3lILB1
-R7
+R11
 31
-R8
-!i10b 1
-R9
-Z28 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
-Z29 !s107 ../../src/generic_counter.vhd|
-!i113 0
 R12
+!i10b 1
 R13
+Z32 !s90 -reportprogress|300|-93|-work|work|../../src/generic_counter.vhd|
+Z33 !s107 ../../src/generic_counter.vhd|
+!i113 0
+R16
+R17
 Abeh
-R3
-R4
+R7
+R8
 DEx4 work 15 generic_counter 0 22 ^`<KMAE]`_5EGCAHV]bZ72
 l23
 L19
 VTT:M88V=lJ62fz0cSYdIR0
 !s100 z5ik>DVc6W0?c7LPT5hG52
-R7
+R11
 31
-R8
-!i10b 1
-R9
-R28
-R29
-!i113 0
 R12
+!i10b 1
 R13
+R32
+R33
+!i113 0
+R16
+R17
 Eseven_seg
-R1
-R3
-R4
+R29
+R7
+R8
 R0
-Z30 8../../src/seven_seg.vhd
-Z31 F../../src/seven_seg.vhd
+Z34 8../../src/seven_seg.vhd
+Z35 F../../src/seven_seg.vhd
 l0
 L8
 VB1CUb757eTiof?6g_B;1f1
 !s100 ^0K0e98LkYC@b2HMce>mE0
-R7
+R11
 31
-R8
-!i10b 1
-R9
-Z32 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
-Z33 !s107 ../../src/seven_seg.vhd|
-!i113 0
 R12
+!i10b 1
 R13
+Z36 !s90 -reportprogress|300|-93|-work|work|../../src/seven_seg.vhd|
+Z37 !s107 ../../src/seven_seg.vhd|
+!i113 0
+R16
+R17
 Abeh
-R3
-R4
+R7
+R8
 DEx4 work 9 seven_seg 0 22 B1CUb757eTiof?6g_B;1f1
 l17
 L15
 Ve;GDhDe75L[ANcW`>43oV0
 !s100 B;TIiQ672B3a[25OB9Jm63
-R7
+R11
 31
-R8
-!i10b 1
-R9
-R32
-R33
-!i113 0
 R12
+!i10b 1
 R13
+R36
+R37
+!i113 0
+R16
+R17

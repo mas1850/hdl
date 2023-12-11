@@ -42,19 +42,19 @@ USE altera_mf.altera_mf_components.all;
 ENTITY blink_rom IS
 	PORT
 	(
-		address		: IN STD_LOGIC_VECTOR (4 DOWNTO 0); --probably change the vector lengths here
+		address		: IN STD_LOGIC_VECTOR (2 DOWNTO 0); --probably change the vector lengths here
 		clock		: IN STD_LOGIC  := '1';
-		q		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0) --and here
+		q		: OUT STD_LOGIC_VECTOR (12 DOWNTO 0) --and here
 	);
 END blink_rom;
 
 
 ARCHITECTURE SYN OF blink_rom IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (3 DOWNTO 0); --this to match q?
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (12 DOWNTO 0); --this to match q?
 
 BEGIN
-	q    <= sub_wire0(3 DOWNTO 0);
+	q    <= sub_wire0(12 DOWNTO 0);
 
 	altsyncram_component : altsyncram
 	GENERIC MAP (
@@ -70,8 +70,8 @@ BEGIN
 		outdata_aclr_a => "NONE",
 		outdata_reg_a => "CLOCK0",
 		ram_block_type => "M10K",
-		widthad_a => 5,
-		width_a => 4,
+		widthad_a => 3, --change to match address?
+		width_a => 13, --change to match q?
 		width_byteena_a => 1
 	)
 	PORT MAP (

@@ -9,7 +9,7 @@ entity top is
   port (
     clk              : in  std_logic; 
     reset            : in  std_logic;
-    led_out          : out std_logic_vector(6 downto 0)
+    led_out          : out std_logic_vector(12 downto 0)
   );
 end top;
 
@@ -22,7 +22,7 @@ component blink_block_mem is
   port (
     clk              : in  std_logic; 
     reset            : in  std_logic;
-    led_out          : out std_logic_vector(6 downto 0)
+    led_out          : out std_logic_vector(12 downto 0)
   );
 end component;  
 

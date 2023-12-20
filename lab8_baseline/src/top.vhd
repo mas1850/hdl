@@ -109,7 +109,7 @@ begin
   
   uut: generic_counter  
     generic map (
-      max_count => 6249   -- 8000 Hz
+      max_count => 5249   -- 8000 Hz
     )
     port map(
       clk       => CLOCK_50,

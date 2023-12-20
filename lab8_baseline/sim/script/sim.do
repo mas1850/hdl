@@ -7,4 +7,4 @@ vcom -93 -work work ../../src/dj_roomba_3000.vhd
 vcom -93 -work work ../src/dj_roomba_3000_tb.vhd
 vsim -voptargs=+acc dj_roomba_3000_tb
 do wave.do
-run 2 us
+run 14 us

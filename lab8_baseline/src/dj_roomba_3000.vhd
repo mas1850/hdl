@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 -- M.A.Schneider
 -- Lab 8: DJ Roomba 3000
--- last modified 12/14/23
+-- last modified 12/19/23
 -------------------------------------------------------------------------------
 
 library ieee;
@@ -38,40 +38,36 @@ architecture beh of dj_roomba_3000 is
       q        : out std_logic_vector (15 downto 0)
     );
   end component;
+
+  component rising_edge_synchronizer is 
+    port (
+      clk             : in  std_logic;
+      reset           : in  std_logic;
+      input           : in  std_logic;
+      edge            : out std_logic
+    );
+  end component;
   
   signal data_address  : std_logic_vector(13 downto 0);
-  signal audio_out     : std_logic_vector(15 downto 0);
+  signal sel_addr      : std_logic_vector(13 downto 0);
 
   signal inst_address  : std_logic_vector(4 downto 0);
   signal instruction   : std_logic_vector(7 downto 0);
-  alias operation      : std_logic_vector(1 downto 0) is instruction(7 downto 6);
-  alias repeat         : std_logic is instruction(5);
-  alias seek_field     : std_logic_vector(4 downto 0) is instruction(4 downto 0);
+  signal operation     : std_logic_vector(1 downto 0);
+  signal repeat        : std_logic;
+  signal seek_field    : std_logic_vector(13 downto 0);
 
   signal execute_sync  : std_logic;
+  signal decode_flag   : std_logic := '0';
+  signal execute_flag  : std_logic := '0';
 
-  type audio_state    is (IDLE, FETCH, DECODE, EXECUTE, DECODE_ERROR);
-  signal pres_state   : audio_state;
-  signal next_state   : audio_state;
+
+
+  type audio_state     is (IDLE, FETCH, DECODE, EXECUTE, DECODE_ERROR);
+  signal pres_state    : audio_state;
+  signal next_state    : audio_state;
 
 begin
-
-  -- data instantiation
-  u_rom_data_inst : rom_data
-    port map (
-      address    => data_address,
-      clock      => clk,
-      q          => audio_out
-    );
-
-  -- instruction instantiation and led output
-  u_rom_instruction_inst : rom_instruction
-    port map (
-      address    => inst_address,
-      clock      => clk,
-      q          => instruction
-    );
-  led <= instruction;
 
   -- synchronize execute button
   sync_execute_btn: rising_edge_synchronizer
@@ -83,7 +79,7 @@ begin
   );
 
   -- next state logic and state register
-  state_reg: process(reset_n, clk)
+  state_reg: process(reset, clk)
   begin
     if (reset = '1') then
       pres_state <= IDLE;
@@ -96,40 +92,27 @@ begin
       
         when IDLE =>
           -- nothing
+          decode_flag <= '0';
+          execute_flag <= '0';
+
         when FETCH =>
           -- increment program counter (which will pull a new instruction from memory)
-          inst_address <= inst_address + 1;
+          inst_address <= std_logic_vector(unsigned(inst_address) + 1);
+          execute_flag <= '0';
+
         when DECODE =>
           -- somehow determine inst type and validity
+          decode_flag <= '1';
+
         when EXECUTE =>
           -- run command
+          decode_flag <= '0';
+          execute_flag <= '1';
+
         when DECODE_ERROR =>
           -- nothing?
-      
+          decode_flag <= '0';
 
-      --   when READ_W =>
-      --     write_en <= '0';
-      --     address <= "00";
-
-      --   when WRITE_W_NO_OP =>        
-      --     write_en <= '1';
-      --     address <= "00";
-
-      --   when WRITE_W =>
-      --     if (address="00") then
-      --       res <= alu_out;
-      --     elsif (address="01") then
-      --       res <= directory;
-      --     end if;
-              
-      --   when WRITE_S =>
-      --     write_en <= '1';
-      --     address <= "01";
-
-      --   when READ_S =>
-      --     write_en <= '0';
-      --     address <= "01";
-      --     res <= directory;
       end case;
     end if;
   end process; -- end state register
@@ -165,26 +148,60 @@ begin
     end case;
   end process; -- end next state logic
 
-  digital_mux: process()
+  -- instruction instantiation and led output
+  rom_instructions_inst : rom_instructions
+    port map (
+      address    => inst_address,
+      clock      => clk,
+      q          => instruction
+    );
+  led <= instruction;
+
+  -- decode inst
+  decode_inst: process(clk, decode_flag)
   begin
-    --connects to clouds signals or sumn
-    -- recieves pres_state
-    -- releases addr_sel to data_reg
-    -- play
-      -- w repeat
-      -- w/o repeat
-    -- pause
-    -- stop
+    --if (decode_flag = '1') then
+      operation <= instruction(7 downto 6);
+      repeat <= instruction(5);
+      seek_field <= instruction(4 downto 0) & "000000000" ;
+    --end if;
   end process;
 
-  data_reg: process(clk, pres_state, addr_sel)
+  -- determines sel_addr
+  mux: process(sel_addr, operation, clk)
+  begin
+    case operation is
+      when "00" => -- play
+        if not (data_address = "00000000000000" and repeat = '0') then
+          sel_addr <= std_logic_vector(unsigned(data_address) + 1);
+        else
+          sel_addr <= data_address;
+        end if;
+      when "01" => -- pause
+        sel_addr <= data_address;
+      when "10" => -- seek
+        sel_addr <= seek_field;
+      when others => -- stop and default
+        sel_addr <= (others => '0');
+    end case;
+  end process;
+
+  -- defines data
+  data_reg: process(clk, pres_state, data_address, execute_flag)
   begin
     -- recieves addr_sel and pres_state
     -- releases addr
     -- addr is audio_out?
+    data_address <= sel_addr;
   end process;
 
-
+  -- data instantiation
+  rom_data_inst : rom_data
+    port map (
+      address    => data_address,
+      clock      => clk,
+      q          => audio_out
+    );
 
   -- -- loop audio file
   -- process(clk,reset)

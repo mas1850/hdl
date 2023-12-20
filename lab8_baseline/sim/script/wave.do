@@ -13,11 +13,22 @@ add wave -noupdate /dj_roomba_3000_tb/dj_roomba/clk
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/reset
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/execute_btn
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/sync
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/inst_address
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/instruction
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/led
-add wave -noupdate /dj_roomba_3000_tb/dj_roomba/audio_out
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/operation
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/repeat
+add wave -noupdate -radix binary /dj_roomba_3000_tb/dj_roomba/seek_field
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/execute_sync
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/decode_flag
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/execute_flag
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/pres_state
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/next_state
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/sel_addr
 add wave -noupdate /dj_roomba_3000_tb/dj_roomba/data_address
+add wave -noupdate /dj_roomba_3000_tb/dj_roomba/audio_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {2012 ns} 0}
+WaveRestoreCursors {{Cursor 1} {8160 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 202
 configure wave -valuecolwidth 48
@@ -33,4 +44,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits us
 update
-WaveRestoreZoom {5 ns} {2105 ns}
+WaveRestoreZoom {7237 ns} {11549 ns}
